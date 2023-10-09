@@ -30,7 +30,7 @@
 		setTimeout(function() {
 			fadeOut(loader);
 			fadeOut(overlay);
-		}, 200);
+		}, 500);
 	};
 	preloader();
 	
@@ -126,6 +126,41 @@
 	};
 	lightbox();
 
+	
 
 
 })();
+// window.onload = () => {
+// 	setTimeout(() => {
+// 		const queryAll = (element) => document.querySelectorAll(element)
+// 		const query = (element) => document.querySelector(element)
+
+// 		const span = queryAll('span')
+// 		const collapseItem0 = query('#collapseItem0')
+// 		span.forEach(el => {
+// 			if(el.dataset.target === '#collapseItem0') {
+// 				el.setAttribute('data-extend', false)
+// 				console.log(el, collapseItem0)
+
+// 				el.addEventListener('click', () => {
+// 					el.setAttribute('data-extend', true)
+// 				})
+// 			}
+// 		})
+
+// 		const load = () => {
+// 			const collapseItem0 = query('#collapseItem0')
+// 			const span = queryAll('span')
+// 			span.forEach(el => {
+// 				if(el.getAttribute('data-extend') === 'true') {
+// 					console.log('je fonctionne')
+// 				}
+// 			})
+// 		}
+	
+// 		requestAnimationFrame(load)
+// 	}, 1000)
+
+	
+// }
+
