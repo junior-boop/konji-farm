@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <div>
+        <a id="btnSec1" href="#section1" >
+            section 1
+        </a>
+        <a id="btnSec2" href="#section2">
+            section 2
+        </a>
+    </div>
+    <section id="section1" style="height: 100vh;">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, commodi veritatis enim nesciunt fuga sequi eius. Dolor impedit repellendus, hic numquam distinctio illum natus velit alias id ipsa possimus aliquid beatae expedita in dolorem tempora at voluptates? Iste, cumque asperiores?</div>
+    </section>
+    <section id="section2"style="height:100vh">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore doloremque in a possimus facilis iure magnam dolorum iusto unde nobis, nesciunt dolor! Dolores sit magni, nemo corrupti ex odio quae voluptatem, corporis nulla, neque similique. Inventore accusantium expedita fuga incidunt repudiandae ut minus, necessitatibus ea, vitae officiis nemo, rerum distinctio cumque sit accusamus nostrum vero quia dolores similique unde repellat facilis quaerat recusandae. Commodi suscipit rerum fuga nulla id architecto!
+        </div>
+    </section>
+</body>
+<script>
+    const navbar = window.location.hash
+    const btnsec1 = document.querySelector("#btnSec1")
+    const btnsec2 = document.querySelector("#btnSec2")
+    const section1 = document.querySelector('#section1')
+    const section2 = document.querySelector('#section2')
+
+    console.log(navbar)
+
+    btnsec1.addEventListener('click', () => {
+        window.location.href = 'http://127.0.0.1:5500/teste.html#section1'
+        window.location.reload()
+    })
+    btnsec2.addEventListener('click', () => {
+        window.location.href = 'http://127.0.0.1:5500/teste.html#section2'
+        window.location.reload()
+    })
+
+    window.addEventListener('load', () => {
+
+        if(window.location.hash === '#section1'){
+            section2.style.display = 'none'
+        } 
+        if(window.location.hash === '#section2'){
+            section1.style.display = 'none'
+        } 
+
+    })
+</script>
+</html>

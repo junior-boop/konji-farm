@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>konji-farm</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="js/Nouveau dossier/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="js/Nouveau dossier/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/Nouveau dossier/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="js/Nouveau dossier/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="js/Nouveau dossier/css/responsive.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- <title>Sterial &mdash; Free Bootstrap 5 Website Template by Untree.co </title> -->
+</head>
+
+	
+
+<body style="background-color: #4e6352;">
+
+	<style>
+
+        body{
+            background-color: #4e6352;
+        }
+
+		.site-nav {
+			position: relative;
+			/*top: 0; */
+			z-index: 9;
+			width: 100%;
+		}
+
+        .banner{
+            width: 100%;
+			padding-top: 24px;
+            height: auto;
+        }
+
+        .banner img{
+            width: 100%;
+            height: auto;
+			border-radius: 16px;
+        }
+
+		@media (max-width : 980px) {
+			.banner{
+				width: 100%;
+				padding-top: 24px;
+				aspect-ratio: 1;
+			}
+
+			.banner img{
+				width: 100%;
+				height: 100%;
+				border-radius: 16px;
+				object-fit: cover;
+			}
+		}
+
+		.contenu1 {
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            color: aliceblue;
+		}
+
+        .contenu1 > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+			flex-direction: column;
+            color: aliceblue;
+        }
+
+		.contenu1 h2{
+			width: 50%;
+			padding: 24px 0;
+			color: aliceblue;
+			text-align: center;
+			font-style: italic;
+		}
+
+		@media (max-width : 980px) {
+			.contenu1 {
+				height: 50vh;
+				color: aliceblue;
+			}
+
+			.contenu1 > div{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: auto;
+				flex-direction: column;
+				color: aliceblue;
+			}
+
+			.contenu1 h2{
+				width: 90%;
+				padding: 24px 0;
+				color: aliceblue;
+				text-align: center;
+				font-style: italic;
+			}
+		}
+
+        #boss {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: white;
+		}
+		#boss > div:has(img){
+			width: 100px;
+		}
+        #boss img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+		}
+
+        .contenu2{
+            display: flex;
+            align-items: start;
+            margin: 64px 0 120px;
+
+        }
+
+        .contenu2 img{
+            width: 100%;
+			aspect-ratio: 1;
+			object-fit: cover;
+			border-radius: 16px;
+        }
+
+        .contenu2 h1{
+            color: aliceblue;
+			font-size: 42px;
+        }
+        .contenu2 p{
+            color: aliceblue;
+        }
+
+		.contenu2.invers {
+			margin-top: 120px;
+		}
+
+
+		@media (max-width : 980px) {
+			.contenu2{
+				display: flex;
+				align-items: start;
+				flex-direction: column;
+				margin-top: 30px;
+				margin-bottom: 64px;
+			}
+
+			.contenu2 img{
+				margin-bottom: 12px;
+			}
+
+			.contenu2 p{
+				color: aliceblue;
+			}
+
+			.contenu2.invers {
+				flex-direction: column-reverse;
+				margin-top: 64px;
+			}
+		}
+
+        #titre-boss{
+            color: aliceblue;
+            text-align: center;
+        }
+
+		#titre-boss h2{
+			color: aliceblue;
+		}
+
+		.gallerie-content {
+			width : 100%;
+			overflow-x: auto;
+			overflow-y: hidden;
+			
+    		scroll-snap-type: mandatory;
+    		scroll-behavior: smooth;
+		}
+
+		.product-carousel{
+    		display: flex;
+			gap: 12px;
+			padding: 0 7%;
+			width: max-content;
+		}
+
+		.product-carousel::-webkit-scrollbar {
+    		display: none;
+		}
+
+		.product-item{
+    		flex: 0 0 auto;
+    		height: 300px;
+			aspect-ratio: auto;
+    		margin-right: 10px;
+		}
+
+		.product-item img{
+    		height: 100%;
+			aspect-ratio: 4/3;
+			object-fit: cover;
+			border-radius: 7px;
+		}
+
+		.product-details{
+    		padding: 10px;
+		}
+
+		.product-details h3{
+    		margin-top: 0;
+		}
+
+		.product-carousel .product-item .product-details h4{
+			color: aliceblue;
+		}
+
+		
+		#quelques-images{
+			background-color: white;
+			padding: 62px 0;
+		}
+
+		#quelques-images h2{
+			margin-bottom: 24px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-decoration: solid;
+			color: #1B221C;
+		}
+
+		#site_menu_mobile{
+        display: none;
+    }
+    @media (max-width : 990px) {
+        #site_menu_mobile {
+            display: block;
+            width: 80%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            background-color: #fff;
+            z-index: 10000;
+            box-shadow: 15px 0 20px -5px black;
+            transform: translateX(100%);
+			transition: transform .5s ease-in-out;
+        }
+        .menu_header {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+        }
+        .menu_header .menu-close {
+            display: inline-flex;
+            width: 40px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+			color: #1B221C;
+        }
+        
+        .menu ul .has-children .dropdown1 {
+            height: 0px;
+            overflow: hidden;
+            transition: all ease-in-out .5s;
+        }
+
+        .menu ul li {
+            padding: 7px 16px 10px 24px;
+        }
+        .menu >ul>li>a {
+            color: #4D594A;
+            font-weight: 600;
+        }
+        .menu >ul>li ul li a {
+            color: #6a7a66;
+            font-weight: 600;
+        }
+        .menu ul li .chevron {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+	.newsletter .container h2 {
+		font-size: 58px;
+		font-weight: 700;
+		line-height: 90%;
+	}
+    </style>
+
+<div id="site_menu_mobile" data-extend="false">
+	<div class="menu_header">
+		<a class="menu-close" data-extend="false">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10"/></svg>
+		</a>
+	</div>
+	<div class="menu">
+		<ul class="site-menu p-0 m-0">
+			<li class="active"><a href="index.html">Accueil</a></li>
+			<!-- <li><a href="about.html">Contact</a></li> -->
+			<li class="has-children">
+				<a class="chevron" data-extend="false">
+					<div>Nos Services</div>
+					<svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
+				</a>
+				<ul class="dropdown1" >
+					<li>
+						<a class="btnElevage" href="/services.html#elevage">Elevage</a>
+					</li>
+					<li>
+						<a class="btnAgriculture" href="/services.html#agriculture">Agriculture</a>
+					</li>
+					<li>
+						<a class="btnTransform" href="/services.html#transformation">Transformation</a>
+					</li>
+					<li>
+						<a>Analyse</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<a class="chevron" data-extend="false">
+					<div>Nous rejoindre</div>
+					<svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
+				</a>
+				<ul class="dropdown1" >
+					<li>
+						<a href="#">Emploi</a>
+					</li>
+					<li>
+						<a href="#">Formation</a>
+					</li>
+					<li>
+						<a href="#">Partenariat</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="histoire.html">Histoire du projet</a></li>
+		</ul>
+	</div>
+</div>
+<!--  NAV BAR-->
+<nav class="site-nav mt-3">
+	<div class="container">
+
+		<div class="site-navigation">
+			<div class="row align-items-center">
+				<div class="col-6 col-lg-3">
+					<a href="index.html" class="logo m-0 float-start">
+						<img src="/logo_white.png" alt="" >
+					</a>
+				</div>
+				<div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
+					<ul class="js-clone-nav  text-center site-menu p-0 m-0">
+						<li class="active"><a href="index.html">Accueil</a></li>
+						<!-- <li><a href="about.html">Contact</a></li> -->
+						<li class="has-children">
+							<a>Nos Services</a>
+							<ul class="dropdown">
+								<li>
+									<a href="/services.html#elevage">Elevage</a>
+									
+								</li>
+								<li>
+									<a href="/services.html#agriculture">Agriculture</a>
+								</li>
+								<li>
+									<a href="#">Transformation</a>
+								</li>
+								<li class="has-children">
+									<a href="">Analyse</a>
+									<ul class="dropdown">
+										<li>
+											<li class="has-children">
+												<a href="#">Présentation du laboratoire</a>
+												<ul class="dropdown">
+													<li><a href="#">Analyse des eaux</a></li>
+													<li><a href="#">Analyse des aliments</a></li>
+													<li><a href="#">Analyse des sols</a></li>
+													<li><a href="#">Analyse des engrais</a></li>
+												</ul>
+											</li>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<a href="#">Nous rejoindre</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Emploi</a>
+								</li>
+								<li>
+									<a href="#">Formation</a>
+								</li>
+								<li>
+									<a href="#">Partenariat</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="histoire.html">Histoire du projet</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3 text-lg-end">
+					<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
+						<li class="cta-button" ><a href="#ancre" style="background-color: #C6F598; border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
+					</ul>
+
+					<a href="#"
+						class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light menu-close"
+						data-toggle="collapse" data-target="#main-navbar">
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</nav>
+
+    <div class="container">
+		<div class="banner">
+			<img src="images/Bannière 1.jpg" alt="">
+		</div>
+			
+		<div class="contenu1">
+			<div>
+				<h2>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+					Recusandae voluptatum, similique at dignissimos illo laborum 
+					aut quia quam facilis nesciunt tempora odit quibusdam est eius 
+					iusto cum consectetur ratione de
+				</h2>
+				<div id="boss">
+					<div>
+						<img src="images/person_1.jpg" alt="">
+					</div>
+					<div style="font-size: 32px;">John Doe</div>
+					<div>Directeur Général</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="contenu2">
+			<div class="col-12 col-md-12 col-lg-6">
+				<div class="col-12">
+					<img src="images/img-4.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 mt-5 mt-lg-0">
+				<div class="contenu2-gauche">
+					<h1 style="color: #fff; margin-bottom: 34px;">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor posuere orci, sit amet pellentesque nisi molestie ac. Proin sit amet nunc orci. Proin id ipsum vel nunc tristique tempus a ut mauris. Mauris eu erat a urna viverra pretium. Maecenas in dui ex. Nulla sodales velit lorem, ut efficitur mi dictum a. Morbi pretium convallis nibh quis volutpat. Vivamus mollis vehicula ex, id euismod purus interdum a. Nunc consectetur erat dapibus tincidunt commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut cursus arcu non sapien pharetra lobortis.
+					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Laboriosam consequuntur harum aspernatur dolor in rem 
+						et modi deserunt reiciendis. Doloribus at natus suscipit, 
+						distinctio ex delectus totam autem illo est voluptates 
+						quasi unde dignissimos eos tempore, tempora nihil culpa 
+						laboriosam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="quelques-images">
+		<div class="container">
+			<h2>Quelques images</h2>
+		</div>
+		<div class="gallerie-content">
+			<div class="product-carousel">
+				
+				<div class="product-item">
+					<img src="images/Bannière 2.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 3.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 4.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 5.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 1.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 2.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 3.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 4.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="images/Bannière 5.jpg" alt="">
+					<div class="product-details">
+						<h4>Description du produit</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="contenu2 invers">
+			<div class="col-12 col-md-12 col-lg-6 mt-5 mt-lg-0">
+				<div class="contenu2-gauche">
+					<h1 style="margin-bottom: 34px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Laboriosam consequuntur harum aspernatur dolor in rem 
+						et modi deserunt reiciendis. Doloribus at natus suscipit, 
+						distinctio ex delectus totam autem illo est voluptates 
+						quasi unde dignissimos eos tempore, tempora nihil culpa 
+						laboriosam.
+					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Laboriosam consequuntur harum aspernatur dolor in rem 
+						et modi deserunt reiciendis. Doloribus at natus suscipit, 
+						distinctio ex delectus totam autem illo est voluptates 
+						quasi unde dignissimos eos tempore, tempora nihil culpa 
+						laboriosam.
+					</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6">
+				<img src="images/img-4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+	<div class="newsletter" style="background-color: white;">
+		<div class="container">
+			<h2 class="heading mb-5" style="color: #1B221C;">Notre <br> Newsletter</h2>
+			<div>
+				<p></p>
+			</div>
+			<div class=" col-12">
+				<div class="widget">
+					<h3 style="color: #1B221C; text-align: start; text-transform: none;">Contactez-nous</h3>
+					<address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+					<ul class="list-unstyled links mb-4">
+						<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+						<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+						<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+					</ul>
+				</div> <!-- /.widget -->
+			</div> <!-- /.col-lg-3 -->
+			<div class="col-lg-6 col-12 d-block">
+				<div style="display: flex; align-items: center;">
+					<input type="mail"  style="padding: 12px 16px; background-color: #F5F6F4; flex: 1; border: none; outline: 1px solid transparent;" placeholder="Votre address mail">
+					<button style="height: 100%; width: 25%; padding: 12px 16px;  background-color: #1B221C; color: white; font: 700;">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="site-footer" style="background-color: #C6F598;">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3 style="color: #1B221C;" id="ancre">A propos
+							<span  style="display: block; font-size: 24px;">Konji Farm</span>
+							<span class="text-primary">.</span> </h3>
+						<p style="color: #1B221C; text-transform: none;">
+							améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
+							respectueux de l’écosystème dans lequel elle s’inscrit.
+						</p>
+					</div> <!-- /.widget -->
+					<div class="widget">
+						
+						<ul class="list-unstyled social">
+							<li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
+							<li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
+							<li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
+							<li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
+							<!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
+							<li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				<div class="col-lg-2 ml-auto">
+					<div class="widget">
+						<h3 style="color: #1B221C;">Liens</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="#" style="color: #1B221C;">Accueil</a></li>
+							<li><a href="#" style="color: #1B221C;">Elevage</a></li>
+							<li><a href="#" style="color: #1B221C;">Agriculture</a></li>
+							<li><a href="#" style="color: #1B221C;">Analyse</a></li>
+							<li><a href="#" style="color: #1B221C;">Transformation</a></li>
+							<li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				<div class="col-lg-2">
+					<div class="widget">
+						<h3 style="color: #1B221C;">Carrieres</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="#" style="color: #1B221C;">Emploi</a></li>
+							<li><a href="#" style="color: #1B221C;">Formation</a></li>
+							<li><a href="#" style="color: #1B221C;">Partenariat</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+
+				<div class="col-lg-3">
+					<div class="widget">
+						<h3 style="color: #1B221C;">Contact</h3>
+						<address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
+						<script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
+					</p>
+				</div>
+			</div> <!-- /.container -->
+		</div> <!-- /.site-footer -->
+		</div>
+<script>
+	const  queryAll = (element) => document.querySelectorAll(element)
+			const query = (element) => document.querySelector(element)
+
+
+			const chevron = queryAll('.chevron')
+			const dropdown= queryAll('.dropdown1')
+			const flech = queryAll('.flech')
+			const closed = queryAll('.menu-close')
+			const menu = query('#site_menu_mobile')
+
+			const read = () => {
+				chevron.forEach((el, key) => {
+					el.onclick = () =>{
+						console.log(el)
+						if(el.dataset.extend === 'false'){
+							const height = dropdown[key].scrollHeight
+							dropdown[key].style.height = height+"px"
+							flech[key].style.transform = 'rotateZ(180deg)'
+							setTimeout(() => {
+								el.dataset.extend = 'true'
+							}, 500)
+						}  
+
+						if(el.dataset.extend ==='true'){
+							dropdown[key].style.height = 0+"px"
+							flech[key].style.transform = 'rotateZ(0deg)'
+							setTimeout(() => {
+								el.dataset.extend = 'false'
+							}, 500)
+						}
+					}
+				})
+
+				closed.forEach((el, key) => {
+					el.onclick = () => {
+					if(menu.dataset.extend === 'false'){
+						menu.style.transform = 'translateX(0%)'
+						setTimeout(() => {
+							menu.dataset.extend = 'true'
+						}, 500)
+					}
+					if(menu.dataset.extend === 'true'){
+						menu.style.transform = 'translateX(100%)'
+						setTimeout(() => {
+							menu.dataset.extend = 'false'
+						}, 500)
+					}
+				}
+				})
+			}
+
+			requestAnimationFrame(read)
+</script>
+</body>
+</html>

@@ -1,9 +1,3 @@
-<!-- /*
-* Template Name: Sterial
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 
@@ -68,18 +62,119 @@
 
 
 	<!-- <title>Sterial &mdash; Free Bootstrap 5 Website Template by Untree.co </title> -->
+	<style>
+		#site_menu_mobile{
+        display: none;
+    }
+    @media (max-width : 990px) {
+        #site_menu_mobile {
+            display: block;
+            width: 80%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            background-color: #fff;
+            z-index: 10000;
+            box-shadow: 15px 0 20px -5px black;
+            transform: translateX(100%);
+			transition: transform .5s ease-in-out;
+        }
+        .menu_header {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+        }
+        .menu_header .menu-close {
+            display: inline-flex;
+            width: 40px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+			color: #1B221C;
+        }
+        
+        .menu ul .has-children .dropdown1 {
+            height: 0px;
+            overflow: hidden;
+            transition: all ease-in-out .5s;
+        }
+
+        .menu ul li {
+            padding: 7px 16px 10px 24px;
+        }
+        .menu >ul>li>a {
+            color: #4D594A;
+            font-weight: 600;
+        }
+        .menu >ul>li ul li a {
+            color: #6a7a66;
+            font-weight: 600;
+        }
+        .menu ul li .chevron {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+	</style>
 </head>
 
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
+	<div id="site_menu_mobile" data-extend="false">
+        <div class="menu_header">
+            <a class="menu-close" data-extend="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10"/></svg>
+			</a>
+        </div>
+        <div class="menu">
+            <ul class="site-menu p-0 m-0">
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <!-- <li><a href="about.html">Contact</a></li> -->
+                <li class="has-children">
+                    <a class="chevron" data-extend="false">
+                        <div>Nos Services</div>
+                        <svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
+                    </a>
+                    <ul class="dropdown1" >
+                        <li>
+                            <a class="btnElevage" href="/services.html#elevage">Elevage</a>
+                        </li>
+                        <li>
+                            <a class="btnAgriculture" href="/services.html#agriculture">Agriculture</a>
+                        </li>
+                        <li>
+                            <a class="btnTransform" href="/services.html#transformation">Transformation</a>
+                        </li>
+                        <li>
+                            <a>Analyse</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a class="chevron" data-extend="false">
+                        <div>Nous rejoindre</div>
+                        <svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
+                    </a>
+                    <ul class="dropdown1" >
+                        <li>
+                            <a href="#">Emploi</a>
+                        </li>
+                        <li>
+                            <a href="#">Formation</a>
+                        </li>
+                        <li>
+                            <a href="#">Partenariat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="histoire.html">Histoire du projet</a></li>
+            </ul>
+        </div>
+    </div>
 <!--  NAV BAR-->
 	<nav class="site-nav mt-3">
 		<div class="container">
@@ -96,28 +191,20 @@
 							<li class="active"><a href="index.html">Accueil</a></li>
 							<!-- <li><a href="about.html">Contact</a></li> -->
 							<li class="has-children">
-								<a href="#">Nos Services</a>
+								<a>Nos Services</a>
 								<ul class="dropdown">
-									<li class="has-children">
-										<a href="#">Elevage</a>
-										<ul class="dropdown">
-											<li><a href="#">Pisciculture</a></li>
-											<li><a href="#">Elevage porcin</a></li>
-											<li><a href="#">Aviculture</a></li>
-										</ul>
+									<li>
+										<a href="/services.html#elevage">Elevage</a>
+										
 									</li>
-									<li class="has-children">
-										<a href="#">Agriculture</a>
-										<ul class="dropdown">
-											<li><a href="#">Nos fruits</a></li>
-											<li><a href="#">Nos Légumes</a></li>
-										</ul>
+									<li>
+										<a href="/services.html#agriculture">Agriculture</a>
 									</li>
 									<li>
 										<a href="#">Transformation</a>
 									</li>
 									<li class="has-children">
-										<a href="#">Analyse</a>
+										<a href="">Analyse</a>
 										<ul class="dropdown">
 											<li>
 												<li class="has-children">
@@ -148,16 +235,16 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="#">Histoire du projet</a></li>
+							<li><a href="histoire.html">Histoire du projet</a></li>
 						</ul>
 					</div>
 					<div class="col-6 col-lg-3 text-lg-end">
 						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
-							<li class="cta-button" ><a href="#" style="background-color: #C6F598; border: none; color: #1B221C;">Nous contacter</a></li>
+							<li class="cta-button" ><a href="#ancre" style="background-color: #C6F598; border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
 						</ul>
 
 						<a href="#"
-							class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+							class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light menu-close"
 							data-toggle="collapse" data-target="#main-navbar">
 							<span></span>
 						</a>
@@ -169,41 +256,6 @@
 	</nav>
 
 <!-- FIN NAV BAR -->
-
-<!-- HERO SECTION -->
-	<!-- <div class="hero overlay">
-
-		<div class="img-bg rellax">
-			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-		</div>
-
-		<div class="container">
-			<div class="row align-items-center justify-content-start">
-				<div class="col-lg-5">
-
-					<h1 class="heading" data-aos="fade-up">It's a Big World Out There, Go Explore</h1>
-					<p class="mb-5" data-aos="fade-up">A small river named Duden flows by their place and supplies it
-						with the necessary regelialia. It is a paradisematic country, in which roasted parts of
-						sentences fly into your mouth.</p>
-
-					<div data-aos="fade-up">
-						<a href="https://www.youtube.com/watch?v=5n-e6lOhVq0"
-							class="play-button align-items-center d-flex glightbox3">
-							<span class="icon-button me-3">
-								<span class="icon-play"></span>
-							</span>
-							<span class="caption">Watch Video</span>
-						</a>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-
-	</div> -->
-<!-- FIN HERO SECTIO -->
 
 <!-- hero sectio teste -->
 <header id="home" class="welcome-hero">
@@ -221,17 +273,18 @@
 		<div class="carousel-inner" role="listbox">
 			<!-- .item -->
 			<div class="item active">
-				<div class="single-slide-item slide1" style="background-image: url(/images/Bannière\ 1.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.603);">
+				<div class="single-slide-item slide1" style="background-image: url(/images/Bannière.JPG); background-position: center; background-size: cover; background-repeat: no-repeat;">
+					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
 								<div class="row">
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Lorem ipsum dolor</h2>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+												<h2 class="heading">Nos missions</h2>
+												<p style="text-transform: none; color: antiquewhite;">
+													Améliorer la qualité de vie des populations en proposant des produits naturels, 
+													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit. 
 												</p>
 												
 												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
@@ -252,16 +305,16 @@
 
 			<div class="item">
 				<div class="single-slide-item slide2" style="background-image: url(/images/Bannière\ 2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.603);">
+					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
 								<div class="row">
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Lorem ipsum dolor</h2>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+												<h2 class="heading">Nos valeurs</h2>
+												<p style="color: white; text-transform: none;">
+													Respect de l’environnement, développement inclusif, transmission du savoir
 												</p>
 												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
 													Savoir plus
@@ -280,16 +333,17 @@
 
 			<div class="item">
 				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 3.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.603);">
+					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
 								<div class="row">
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Lorem ipsum dolor</h2>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+												<h2 class="heading">Nos missions</h2>
+												<p style="text-transform: none; color:white">
+													Améliorer la qualité de vie des populations en proposant des produits naturels, 
+													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit. 
 												</p>
 												
 												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
@@ -309,16 +363,16 @@
 
 			<div class="item">
 				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.603);">
+					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
 								<div class="row">
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Lorem ipsum dolor</h2>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+												<h2 class="heading">Nos valeurs</h2>
+												<p style="color: white; text-transform: none">
+													Respect de l’environnement, développement inclusif, transmission du savoir 
 												</p>
 												
 												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
@@ -338,17 +392,18 @@
 
 			<div class="item">
 				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 5.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.603);">
+					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
 								<div class="row">
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h4>Lorem ipsum dolor sit amet</h4>
-												<h2 class="heading">Lorem ipsum dolor</h2>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+												<!-- <h4>Lorem ipsum dolor sit amet</h4> -->
+												<h2 class="heading">Nos missions</h2>
+												<p style="text-transform: none; color: white">
+													Améliorer la qualité de vie des populations en proposant des produits naturels, 
+													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit.
 												</p>
 												
 												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
@@ -378,7 +433,7 @@
 				<div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up">
-							<img src="images/1000_F_444310359_tGKYQfr7YpCVd9ElYbdg1RaqCzX8CeFw.jpg" alt="Image" class="img-fluid rellax ">
+							<img src="images/markus-spiske-71uUjIt3cIs-unsplash.jpg" alt="Image" class="img-fluid rellax ">
 						</div>
 						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"
 							data-rellax-percentage="0.1.5">
@@ -392,13 +447,11 @@
 					<div>
 						<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #1B221C;">Johan NYAMSY, Directeur Général</h2>
 
-						<p data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-							Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-							Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+						<p data-aos="fade-up" data-aos-delay="200" style="text-transform: none;">KONJI FARM est une société coopérative simplifiée qui vise à opérer dans le respect des principes fondamentaux de la permaculture. 
+							En d’autres termes, nous cherchons à promouvoir une éthique et une méthode globales qui poussent à la conception de systèmes intégrés dans une stratégie de développement durable, 
+							où l’activité humaine tient compte des écosystèmes naturels et s’exerce en harmonie et en interconnexion avec eux, dans un souci constant d’efficacité, de soutenabilité et de résilience.</p>
 
-						<p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-							Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-							Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+						<p data-aos="fade-up" data-aos-delay="300"></p>
 
 						<!-- <p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">Read
 								more</a></p> -->
@@ -433,9 +486,9 @@
 								</span>
 								<div>
 									<h3 style="color: #1B221C;">Elevage</h3>
-									<p style="color: #1B221C;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-										Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+									<p style="color: #1B221C; text-transform: none;">KONJI MEAT & FISH est une filiale chargée des produits issus de l'élevage. Il dispose des meilleurs techniciens du domaine, jeunes et motivés.
+										Les techniques piscicoles sont respectées, ainsi que ceux de l'élevage porcin pour garantir une viande saine et directement consommable par les populations.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -446,9 +499,10 @@
 								</span>
 								<div>
 									<h3 style="color: #1B221C;">Agriculture</h3>
-									<p style="color: #1B221C;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-										Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+									<p style="color: #1B221C; text-transform: none;">Dans notre approche agricole, nous croyons en l'importance de cultiver la terre
+									avec respect responsabilité. Nous nous engageons à préserver la biodiversité, à promouvoir des pratiques durables
+									et à favoriser une relation harmonieuse entre l'homme et la nature. 
+									</p>
 								</div>
 							</div>
 						</div>
@@ -459,9 +513,10 @@
 								</span>
 								<div>
 									<h3 style="color: #1B221C;">Analyse</h3>
-									<p style="color: #1B221C;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-										Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+									<p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
+										nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
+										de déterminer avec précision les composants que nous consommons.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -472,9 +527,9 @@
 								</span>
 								<div>
 									<h3 style="color: #1B221C;">Transformation</h3>
-									<p style="color: #1B221C;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-										Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+									<p style="color: #1B221C; text-transform: none;">La transformation des aliments est un processus complexe, qui permet de créer une variété infinie des produits
+										alimentaires. La transformation joue un role crucial en convertissant les matières premières brutes en produits finis consommables. 
+									</p>
 								</div>
 							</div>
 						</div>
@@ -489,10 +544,10 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-between  mb-5">
 				<div class="col-lg-5" data-aos="fade-up">
-					<h2 class="heading mb-3" style="color: #1B221C;">Découvrez nos productions, réalisations et transformations</h2>
-					<p style="color: #1B221C;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-						Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-						Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+					<h2 class="heading mb-3" style="color: #1B221C;">Découvrez nos activités, productions, réalisations et transformations</h2>
+					<p style="color: #1B221C;">
+						
+					</p>
 				</div>
 				<div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
 					<div id="destination-controls">
@@ -579,27 +634,27 @@
 					</div>
 				</div>
 
-				<div class="destination">
+				<!-- <div class="destination">
 					<div class="thumb">
-						<img src="images/IMG_4928.JPG" alt="Image" class="img-fluid">
+						<img src="images/IMG_4928.JPG" alt="Image" class="img-fluid"> -->
 						<!-- <div class="price">$490</div> -->
-					</div>
+					<!-- </div>
 					<div class="mt-4">
 						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
 						<span class="meta">lorem ipsum dolor</span>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="destination">
+				<!-- <div class="destination">
 					<div class="thumb">
-						<img src="images/img-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-4.jpg" alt="Image" class="img-fluid"> -->
 						<!-- <div class="price">$490</div> -->
-					</div>
+					<!-- </div>
 					<div class="mt-4">
 						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
 						<span class="meta">lorem ipsum dolor</span>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
@@ -613,13 +668,14 @@
 					<img src="images/78f44b17-8e23-4dd4-8b6d-c7c423f948ed.jpg" alt="Image" class="img-fluid">
 				</div>
 				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-					<h2 class="heading mb-4" style="color: #1B221C;">Lorem ipsum dolor</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-						Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-						Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-						Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-						Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p>
+					<h2 class="heading mb-4" style="color: #1B221C; text-transform: none;"> Une agriculture intégrée et intégrante</h2>
+					<p style="text-transform: none; color:black"><strong>Intégrée</strong> : Définition : « Une agriculture intégrée est un processus dans laquelle la production végétale et la gestion 
+						du bétail se soutiennent mutuellement, de sorte que l’exploitation totale soit supérieure à la somme de ses parties. 
+						Son principal objectif est de rendre l’exploitation rentable tout en minimisant l’impact environnemental. 
+						En effet, les systèmes agricoles intégrés réduisent les incidences sur l’environnement en adaptant le système au site. 
+						L’utilisation efficace de l’eau, des nutriments et de la fertilité du sol est la clé de la durabilité. 
+						Toutefois, le système doit être suffisamment souple pour évoluer en fonction des conditions »</p><br>
+					<p style="text-transform: none; color: black;"><strong>Intégrante</strong> : Développement inclusif, faire participer la population (création d’emplois, direct et indirects).</p>
 					<!-- <p class="my-4" data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-primary">Read
 							more</a></p> -->
 				</div>
@@ -627,123 +683,6 @@
 		</div>
 	</div>
 
-	<!-- <div class="section bg-light">
-		<h2 class="heading mb-5 text-center">Testimonials</h2>
-
-		<div class="text-center mb-5">
-			<div id="prevnext-testimonial">
-				<span class="prev me-3" data-controls="prev">
-					<span class="icon-chevron-left"></span>
-
-				</span>
-				<span class="next" data-controls="next">
-					<span class="icon-chevron-right"></span>
-
-				</span>
-			</div>
-		</div>
-
-		<div class="wide-slider-testimonial-wrap">
-			<div class="wide-slider-testimonial">
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_1.jpg" alt="Free template by TemplateUX">
-							<h3>John Doe</h3>
-							<p class="position mb-5">CEO, Founder</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-						there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-						Semantics, a large language ocean.&rdquo;</p>
-					</blockquote>
-				</div>
-
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_2.jpg" alt="Free template by TemplateUX">
-							<h3>James Woodland</h3>
-							<p class="position mb-5">Designer at Facebook</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the
-						skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her
-						own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her
-						way.&rdquo;</p>
-
-					</blockquote>
-				</div>
-
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_3.jpg" alt="Free template by TemplateUX">
-							<h3>Rob Smith</h3>
-							<p class="position mb-5">Product Designer at Twitter</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;A small river named Duden flows by their place and supplies it with the necessary
-						regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
-						mouth.&rdquo;</p>
-					</blockquote>
-				</div>
-
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_1.jpg" alt="Free template by TemplateUX">
-							<h3>John Doe</h3>
-							<p class="position mb-5">CEO, Founder</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-						there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-						Semantics, a large language ocean.&rdquo;</p>
-					</blockquote>
-				</div>
-
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_2.jpg" alt="Free template by TemplateUX">
-							<h3>James Woodland</h3>
-							<p class="position mb-5">Designer at Facebook</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the
-						skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her
-						own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her
-						way.&rdquo;</p>
-
-					</blockquote>
-				</div>
-
-				<div class="item">
-					<blockquote class="block-testimonial">
-						<div class="author">
-							<img src="images/person_3.jpg" alt="Free template by TemplateUX">
-							<h3>Rob Smith</h3>
-							<p class="position mb-5">Product Designer at Twitter</p>
-						</div>
-						<p>
-						<div class="quote">&ldquo;</div>
-						&ldquo;A small river named Duden flows by their place and supplies it with the necessary
-						regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
-						mouth.&rdquo;</p>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-
-
-
-	</div> /.untree_co-section -->
 
 	<div class="section">
 		<div class="container">
@@ -757,17 +696,17 @@
 
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni non illo a. Rem repellendus ipsa harum ducimus a esse.
+
 						</p>
 					</div>
 					<div class=" col-12">
 						<div class="widget">
-							<h3 style="color: #1B221C;">Contact</h3>
-							<address>43 Raymouth Rd. Baltemoer, London 3910</address>
+							<h3 style="color: #1B221C;">Contactez-nous</h3>
+							<address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
 							<ul class="list-unstyled links mb-4">
-								<li><a href="tel://11234567890" style="color: #1B221C;">+1(123)-456-7890</a></li>
-								<li><a href="tel://11234567890" style="color: #1B221C;">+1(123)-456-7890</a></li>
-								<li><a href="mailto:info@mydomain.com" style="color: #1B221C;">info@mydomain.com</a></li>
+								<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
 							</ul>
 						</div> <!-- /.widget -->
 					</div> <!-- /.col-lg-3 -->
@@ -783,97 +722,10 @@
 	</div>
 
 
-	<!-- <div class="section">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-12" data-aos="fade-up" data-aos-delay="0">
-
-					<h2 class="heading mb-5">Recent Posts</h2>
-				</div>
-			</div>
-			<div class="row align-items-stretch">
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-					<div class="media-entry">
-						<a href="#">
-							<img src="images/gal_1.jpg" alt="Image" class="img-fluid">
-						</a>
-						<div class="bg-white m-body">
-							<span class="date">May 14, 2020</span>
-							<h3><a href="#">Far far away, behind the word mountains</a></h3>
-							<p>Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
-
-							<a href="single.html" class="more d-flex align-items-center float-start">
-								<span class="label">Read More</span>
-								<span class="arrow"><span class="icon-keyboard_arrow_right"></span></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-					<div class="media-entry">
-						<a href="#">
-							<img src="images/gal_2.jpg" alt="Image" class="img-fluid">
-						</a>
-						<div class="bg-white m-body">
-							<span class="date">May 14, 2020</span>
-							<h3><a href="#">Far far away, behind the word mountains</a></h3>
-							<p>Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
-
-							<a href="single.html" class="more d-flex align-items-center float-start">
-								<span class="label">Read More</span>
-								<span class="arrow"><span class="icon-keyboard_arrow_right"></span></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-					<div class="media-entry">
-						<a href="#">
-							<img src="images/gal_3.jpg" alt="Image" class="img-fluid">
-						</a>
-						<div class="bg-white m-body">
-							<span class="date">May 14, 2020</span>
-							<h3><a href="#">Far far away, behind the word mountains</a></h3>
-							<p>Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
-							<a href="single.html" class="more d-flex align-items-center float-start">
-								<span class="label">Read More</span>
-								<span class="arrow"><span class="icon-keyboard_arrow_right"></span></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-					<div class="media-entry">
-						<a href="#">
-							<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
-						</a>
-						<div class="bg-white m-body">
-							<span class="date">May 14, 2020</span>
-							<h3><a href="#">Far far away, behind the word mountains</a></h3>
-							<p>Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
-							<a href="single.html" class="more d-flex align-items-center float-start">
-								<span class="label">Read More</span>
-								<span class="arrow"><span class="icon-keyboard_arrow_right"></span></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
-
+	
 	<div class="py-5" style="background-color: #4D594A;">
 		<div class="container">
 			<div class="row" >
-				<!-- <div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
-					<h3 class="text-white m-0">Begin your adventurous journey here.</h3>
-				</div>
-				<div class="col-lg-5 text-center text-lg-end">
-					<a href="#" class="btn btn-outline-white">Get started</a>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -884,10 +736,13 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="widget">
-						<h3 style="color: #1B221C;">A propos
+						<h3 style="color: #1B221C;" id="ancre">A propos
 							<span  style="display: block; font-size: 24px;">Konji Farm</span>
 							<span class="text-primary">.</span> </h3>
-						<p style="color: #1B221C;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto maiores soluta, nisi, assumenda inventore excepturi dolorum incidunt consequatur voluptate ex sit vitae similique? Dolore dolorem ipsum nulla quisquam inventore pariatur?.</p>
+						<p style="color: #1B221C; text-transform: none;">
+							améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
+							respectueux de l’écosystème dans lequel elle s’inscrit.
+						</p>
 					</div> <!-- /.widget -->
 					<div class="widget">
 						
@@ -931,11 +786,11 @@
 				<div class="col-lg-3">
 					<div class="widget">
 						<h3 style="color: #1B221C;">Contact</h3>
-						<address>43 Raymouth Rd. Baltemoer, London 3910</address>
+						<address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
 						<ul class="list-unstyled links mb-4">
-							<li><a href="tel://11234567890" style="color: #1B221C;">+1(123)-456-7890</a></li>
-							<li><a href="tel://11234567890" style="color: #1B221C;">+1(123)-456-7890</a></li>
-							<li><a href="mailto:info@mydomain.com" style="color: #1B221C;">contact@konji-farm.com</a></li>
+							<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
 						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-3 -->
@@ -944,13 +799,13 @@
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p class="mb-0">Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. 
+					<p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
+						<script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
 					</p>
 				</div>
 			</div> <!-- /.container -->
 		</div> <!-- /.site-footer -->
-
+		</div>
 		<!-- Preloader -->
 		<div id="overlayer"></div>
 		<div class="loader">
@@ -963,7 +818,7 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/aos.js"></script>
-		<script src="js/navbar.js"></script>
+		<!-- <script src="js/navbar.js"></script> -->
 		<script src="js/counter.js"></script>
 		<script src="js/rellax.js"></script>
 		<script src="js/flatpickr.js"></script>
@@ -985,6 +840,60 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!--Custom JS-->
         <script src="js/Nouveau dossier/custom.js"></script>
+		<script>
+			const  queryAll = (element) => document.querySelectorAll(element)
+			const query = (element) => document.querySelector(element)
+
+
+			const chevron = queryAll('.chevron')
+			const dropdown= queryAll('.dropdown1')
+			const flech = queryAll('.flech')
+			const closed = queryAll('.menu-close')
+			const menu = query('#site_menu_mobile')
+
+			const read = () => {
+				chevron.forEach((el, key) => {
+					el.onclick = () =>{
+						console.log(el)
+						if(el.dataset.extend === 'false'){
+							const height = dropdown[key].scrollHeight
+							dropdown[key].style.height = height+"px"
+							flech[key].style.transform = 'rotateZ(180deg)'
+							setTimeout(() => {
+								el.dataset.extend = 'true'
+							}, 500)
+						}  
+
+						if(el.dataset.extend ==='true'){
+							dropdown[key].style.height = 0+"px"
+							flech[key].style.transform = 'rotateZ(0deg)'
+							setTimeout(() => {
+								el.dataset.extend = 'false'
+							}, 500)
+						}
+					}
+				})
+
+				closed.forEach((el, key) => {
+					el.onclick = () => {
+					if(menu.dataset.extend === 'false'){
+						menu.style.transform = 'translateX(0%)'
+						setTimeout(() => {
+							menu.dataset.extend = 'true'
+						}, 500)
+					}
+					if(menu.dataset.extend === 'true'){
+						menu.style.transform = 'translateX(100%)'
+						setTimeout(() => {
+							menu.dataset.extend = 'false'
+						}, 500)
+					}
+				}
+				})
+			}
+
+			requestAnimationFrame(read)
+		</script>
 </body>
 
 </html>
