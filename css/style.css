@@ -9297,7 +9297,7 @@ textarea {
 .site-nav {
   position: absolute;
   top: 0;
-  z-index: 9;
+  z-index: 100;
   width: 100%; }
 
 .site-nav {
