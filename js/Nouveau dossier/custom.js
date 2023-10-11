@@ -40,10 +40,10 @@ $(document).ready(function(){
 			$('#client').owlCarousel({
 				items:5,
 				loop:true,
-				smartSpeed: 1000,
+				smartSpeed: 700,
 				autoplay:true,
 				dots:false,
-				autoplayHoverPause:true,
+				autoplayHoverPause:false,
 				responsive:{
 						0:{
 							items:2
@@ -63,7 +63,7 @@ $(document).ready(function(){
 				
 				
 				$('.play').on('click',function(){
-					owl.trigger('play.owl.autoplay',[1000])
+					owl.trigger('play.owl.autoplay',[700])
 				})
 				$('.stop').on('click',function(){
 					owl.trigger('stop.owl.autoplay')
