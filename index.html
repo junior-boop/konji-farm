@@ -119,6 +119,254 @@
             justify-content: space-between;
         }
     }
+
+	.column {
+		
+		column-count: 2;
+		column-gap: 24px;
+		column-fill: balance;
+	}
+	.activiteItems {
+		display: flex;
+		position: relative;
+		width: 100%;
+		aspect-ratio: 3/4;
+		border-radius: 16px;
+		background-color: #6a7a66;
+		margin-bottom: 18px;
+		column-span: all;
+		overflow: hidden;
+	}
+
+	.activiteItems:hover {
+		display: flex;
+		cursor: pointer;
+		transform: translateY(-7px);
+	}
+
+	.activiteItems img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.activiteItems .desc {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+		display: flex;
+		align-items: flex-end;
+		background-color: rgba(0, 0, 0, 0.116);
+
+	}
+
+	
+	.activiteItems .desc > div {
+		height: 46px;
+		overflow: hidden;
+		transition: all .3s ease-in-out;
+	}
+	.activiteItems:hover .desc > div {
+		height: 72px;
+	}
+
+	.activiteItems .hiden {
+		color: rgb(226, 226, 226);
+		font-weight: 600;
+		text-transform: none;
+	}
+
+	.activiteItems span {
+		font-size: 32px;
+		font-family: "Brygada 1918";
+		color: white;
+		font-weight: 700;
+	}
+
+	.header-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+	}
+	.header-text .container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: end;
+		padding: 0 0 120px 0;
+	}
+	.header-text .container .heading {
+		font-family: "Brygada 1918";
+		font-size: 60px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1;
+		margin: 14px 0;
+	}
+	.header-text .container .titre {
+		font-family: "Brygada 1918";
+		font-size: 30px;
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: -21px;
+	}
+	.header-text .container .desc {
+		/* font-family: "Brygada 1918"; */
+		font-size: 21px;
+		color: #fff;
+		font-weight: 500;
+	}
+	.header-text .container .box {
+		height: 300px;
+		display: flex;
+		align-items: center;
+		padding-left: 72px;
+	}
+
+	.site-nav {
+		z-index: 100 !important;
+	}
+	.mobile {
+		display: none;
+	}
+	.image-stack__item--bottom {
+			position: absolute;
+			right: 0%;
+			top: -140%;
+			width: 75%;
+			aspect-ratio: 3/4;
+			z-index: -1;
+		}
+	@media (max-width : 990px) {
+		.header-text .container .box {
+			height: auto;
+			padding-left: 0px;
+		}
+		.header-text .container .heading {
+			font-size: 48px;
+		}
+		.header-text .container .titre {
+			font-family: "Brygada 1918";
+			font-size: 24px;
+		}
+		.header-text .container .desc {
+			font-size: 18px;
+			color: #fff;
+			font-weight: 500;
+		}
+		.header-text .container {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: end;
+			padding: 0 0 60px 0;
+		}
+		.image-stack__item--bottom {
+			position: absolute;
+			right: 0%;
+			top: -60%;
+			width: 85%;
+			aspect-ratio: 3/4;
+			z-index: -1;
+		}
+
+		.image-stack__item--top {
+			padding-top: 20px;
+			padding-right: 30%;
+			width: 90%;
+		}
+
+		.vil.mb-5 {
+			margin-bottom: 5rem !important;
+		}
+
+		.desktop {
+			display: none;
+		}
+		.mobile {
+			display: block;
+		}
+		.service-section-1 {
+			padding-top: 7rem;
+		}
+		.image-stack {
+			padding-top: 120px;
+		}
+		.section-2 {
+			padding-top: 5rem !important;
+		}
+	}
+
+	.newsletter .container h2 {
+		font-size: 58px;
+		font-weight: 700;
+		line-height: 90%;
+	}
+
+	.Image_lien {
+		width: 100%;
+		height: 850px;
+		position: relative;
+		overflow: hidden;
+		margin-top: 7rem;
+	}
+	.Image_lien > .image_containe {
+		width: 122%;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		column-count: 2;
+		column-gap: 19px;
+	}
+	.Image_lien > .image_containe .image_item {
+		width: 100%;
+		aspect-ratio: 0.64;
+		background-color: #6a7a66;
+		margin-bottom: 19px;
+		border-radius: 16px;
+		overflow: hidden;
+		position: relative;
+	}
+	.Image_lien > .image_containe .image_item img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.Image_lien > .image_containe .image_item .desc{
+		position: absolute;
+		z-index: 2 ;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+		display: flex;
+		top: 0;
+		align-items: flex-end;
+		background-color: rgba(0, 0, 0, 0.158);
+	}
+	.Image_lien > .image_containe .image_item .titre{
+		font-size: 24px;
+		font-family: "Brygada 1918";
+		color: white;
+		font-weight: 700;
+	}
+	.Image_lien > .image_containe .image_item .hiden{
+		font-size: 14px;
+		color: white;
+		line-height: 18px;
+		text-transform: none;
+	}
+	.Image_lien > .image_containe .space {
+		height: 34px;
+	}
+	
+	.site-footer * {
+		color : white !important
+	}
 	</style>
 </head>
 
@@ -136,7 +384,7 @@
                 <!-- <li><a href="about.html">Contact</a></li> -->
                 <li class="has-children">
                     <a class="chevron" data-extend="false">
-                        <div>Nos Services</div>
+                        <div>Nos Activités</div>
                         <svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
                     </a>
                     <ul class="dropdown1" >
@@ -191,7 +439,7 @@
 							<li class="active"><a href="index.html">Accueil</a></li>
 							<!-- <li><a href="about.html">Contact</a></li> -->
 							<li class="has-children">
-								<a>Nos Services</a>
+								<a>Nos Activités</a>
 								<ul class="dropdown">
 									<li>
 										<a href="/services.html#elevage">Elevage</a>
@@ -222,25 +470,25 @@
 								</ul>
 							</li>
 							<li class="has-children">
-								<a href="#">Nous rejoindre</a>
+								<a>Nous rejoindre</a>
 								<ul class="dropdown">
 									<li>
-										<a href="#">Emploi</a>
+										<a href="/rejoindre.html#devis">Demande de devis</a>
 									</li>
 									<li>
-										<a href="#">Formation</a>
+										<a href="/rejoindre.html#carriere">Carrières</a>
 									</li>
 									<li>
-										<a href="#">Partenariat</a>
+										<a href="/rejoindre.html#partenariat">Partenariat</a>
 									</li>
 								</ul>
 							</li>
 							<li><a href="histoire.html">Histoire du projet</a></li>
-						</ul>
+						</ul> 
 					</div>
 					<div class="col-6 col-lg-3 text-lg-end">
 						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
-							<li class="cta-button" ><a href="#ancre" style="background-color: #C6F598; border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
+							<li class="cta-button" ><a href="#ancre" style="background-color: #cbbba0; border: none; color: #000; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
 						</ul>
 
 						<a href="#"
@@ -266,14 +514,28 @@
 			<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
 			<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
 			<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+			<li data-target="#header-carousel" data-slide-to="3"><span class="small-circle"></span></li>
+			<li data-target="#header-carousel" data-slide-to="4"><span class="small-circle"></span></li>
 		</ol><!-- /ol-->
 		<!--/.carousel-indicator -->
+
+		<div class="header-text">
+			<div class="container">
+				<div class="box" data-aos="fade-up" data-aos-delay="400">
+					<div class="col-12 col-lg-7">
+						<div class="titre">Konji-farm</div>
+						<div class="heading">Une agriculture intégrée et intégrante</div>
+						<div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique recusandae nihil.</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!--/.carousel-inner -->
 		<div class="carousel-inner" role="listbox">
 			<!-- .item -->
 			<div class="item active">
-				<div class="single-slide-item slide1" style="background-image: url(/images/Bannière.JPG); background-position: center; background-size: cover; background-repeat: no-repeat;">
+				<div class="single-slide-item slide1" style="background-image: url(/images/assets/Bannière\ 1e.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
 					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
@@ -281,15 +543,7 @@
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Nos missions</h2>
-												<p style="text-transform: none; color: antiquewhite;">
-													Améliorer la qualité de vie des populations en proposant des produits naturels, 
-													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit. 
-												</p>
 												
-												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-													Savoir plus
-												</button> -->
 												
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
@@ -304,7 +558,7 @@
 			</div><!-- /.item .active-->
 
 			<div class="item">
-				<div class="single-slide-item slide2" style="background-image: url(/images/Bannière\ 2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+				<div class="single-slide-item slide2" style="background-image: url(/images/assets/Bannière\ 2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
 					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
@@ -312,13 +566,7 @@
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Nos valeurs</h2>
-												<p style="color: white; text-transform: none;">
-													Respect de l’environnement, développement inclusif, transmission du savoir
-												</p>
-												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-													Savoir plus
-												</button> -->
+												
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
 									</div><!--/.col-->
@@ -332,7 +580,7 @@
 			</div><!-- /.item .active-->
 
 			<div class="item">
-				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 3.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+				<div class="single-slide-item slide3" style="background-image: url(/images/assets/Bannière\ 3.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
 					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
@@ -340,15 +588,7 @@
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Nos missions</h2>
-												<p style="text-transform: none; color:white">
-													Améliorer la qualité de vie des populations en proposant des produits naturels, 
-													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit. 
-												</p>
 												
-												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-													Savoir plus
-												</button> -->
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
 									</div><!--/.col-->
@@ -362,7 +602,7 @@
 			</div><!-- /.item .active-->
 
 			<div class="item">
-				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+				<div class="single-slide-item slide4" style="background-image: url(/images/assets/Bannière\ 4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
 					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
@@ -370,14 +610,7 @@
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<h2 class="heading">Nos valeurs</h2>
-												<p style="color: white; text-transform: none">
-													Respect de l’environnement, développement inclusif, transmission du savoir 
-												</p>
 												
-												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-													Savoir plus
-												</button> -->
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
 									</div><!--/.col-->
@@ -391,7 +624,7 @@
 			</div><!-- /.item .active-->
 
 			<div class="item">
-				<div class="single-slide-item slide3" style="background-image: url(/images/Bannière\ 5.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+				<div class="single-slide-item slide5" style="background-image: url(/images/assets/Bannière\ 5.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
 					<div style="background-color: rgba(0, 0, 0, 0.500);">
 						<div class="container">
 							<div class="welcome-hero-content">
@@ -399,16 +632,7 @@
 									<div class="col-sm-7">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-txt">
-												<!-- <h4>Lorem ipsum dolor sit amet</h4> -->
-												<h2 class="heading">Nos missions</h2>
-												<p style="text-transform: none; color: white">
-													Améliorer la qualité de vie des populations en proposant des produits naturels, 
-													à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit.
-												</p>
 												
-												<!-- <button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-													Savoir plus
-												</button> -->
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
 									</div><!--/.col-->
@@ -429,23 +653,23 @@
 <!-- fin hero section teste -->
 	<div class="section section-2">
 		<div class="container">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+			<div class="row align-items-center justify-content-between py-5 flex-column-reverse flex-lg-row">
+				<div class="vil col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up">
-							<img src="images/markus-spiske-71uUjIt3cIs-unsplash.jpg" alt="Image" class="img-fluid rellax ">
+							<img src="/images/markus-spiske-71uUjIt3cIs-unsplash.jpg" alt="Image" class="img-fluid rellax" data-rellax-speed="-2" data-rellax-percentage="-1" data-rellax-mobile-speed="-5">
 						</div>
 						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"
 							data-rellax-percentage="0.1.5">
-							<img src="images/person_1.jpg" alt="Image" class="img-fluid">
+							<img src="/images/images-vine.JPG" alt="Image" class="img-fluid">
 						</div>
 					</div>
 
 				</div>
 				<div class="col-lg-4 order-lg-1 mt-5 mt-lg-0">
 
-					<div>
-						<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #1B221C;">Johan NYAMSY, Directeur Général</h2>
+					<div class="py-5">
+						<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100" >Qui sommes nous </h2>
 
 						<p data-aos="fade-up" data-aos-delay="200" style="text-transform: none;">KONJI FARM est une société coopérative simplifiée qui vise à opérer dans le respect des principes fondamentaux de la permaculture. 
 							En d’autres termes, nous cherchons à promouvoir une éthique et une méthode globales qui poussent à la conception de systèmes intégrés dans une stratégie de développement durable, 
@@ -463,259 +687,156 @@
 		</div>
 	</div>
 
-	<div class="section service-section-1">
-		<div class="container">
-			<div class="row" style="color: #1B221C;">
+	<div class="section service-section-1 desktop" style="background-color: #4D594A;">
+		<div class="container d-flex justify-content-center">
+			<div class="col-12 col-lg-10 m-auto p-0">
+				<div class="column" style="color: #1B221C;">
 
-				<div class="col-lg-3 mb-4 mb-lg-0">
-					<div class="heading-content" data-aos="fade-up">
-						<h2 class="heading mb-3" style="color: #1B221C;">Nos <span class="d-block">Services</span></h2>
-						<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-							Eum vel consequuntur fugit beatae nihil rem a est enim, repudiandae similique architecto. 
-							Numquam laudantium assumenda molestias repellat natus recusandae nobis dignissimos.</p> -->
-						<!-- <p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">View
-								All</a></p> -->
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<div class="row">
-						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-							<div class="service-1">
-								<span>
-									<img src="images/elevage.png" alt="Image" class="img-fluid">
-								</span>
-								<div>
-									<h3 style="color: #1B221C;">Elevage</h3>
-									<p style="color: #1B221C; text-transform: none;">KONJI MEAT & FISH est une filiale chargée des produits issus de l'élevage. Il dispose des meilleurs techniciens du domaine, jeunes et motivés.
-										Les techniques piscicoles sont respectées, ainsi que ceux de l'élevage porcin pour garantir une viande saine et directement consommable par les populations.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-							<div class="service-1">
-								<span>
-									<img src="images/agriculture.png" alt="Image" class="img-fluid">
-								</span>
-								<div>
-									<h3 style="color: #1B221C;">Agriculture</h3>
-									<p style="color: #1B221C; text-transform: none;">Dans notre approche agricole, nous croyons en l'importance de cultiver la terre
-									avec respect responsabilité. Nous nous engageons à préserver la biodiversité, à promouvoir des pratiques durables
-									et à favoriser une relation harmonieuse entre l'homme et la nature. 
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-							<div class="service-1">
-								<span>
-									<img src="images/analyse.png" alt="Image" class="img-fluid">
-								</span>
-								<div>
-									<h3 style="color: #1B221C;">Analyse</h3>
-									<p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
-										nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
-										de déterminer avec précision les composants que nous consommons.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
-							<div class="service-1">
-								<span>
-									<img src="images/transform.png" alt="Image" class="img-fluid">
-								</span>
-								<div>
-									<h3 style="color: #1B221C;">Transformation</h3>
-									<p style="color: #1B221C; text-transform: none;">La transformation des aliments est un processus complexe, qui permet de créer une variété infinie des produits
-										alimentaires. La transformation joue un role crucial en convertissant les matières premières brutes en produits finis consommables. 
-									</p>
-								</div>
-							</div>
+					<div class="cible-fantome">
+						<div class="heading-content" data-aos="fade-up">
+							<h2 class="heading mb-3" style="color: #ffffff;">Nos Activités</h2>
+							<p class="mb-3" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto eius repellat nulla beatae!</p>
 						</div>
 					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="section section-3" data-aos="fade-up" data-aos-delay="100">
-		<div class="container">
-			<div class="row align-items-center justify-content-between  mb-5">
-				<div class="col-lg-5" data-aos="fade-up">
-					<h2 class="heading mb-3" style="color: #1B221C;">Découvrez nos activités, productions, réalisations et transformations</h2>
-					<p style="color: #1B221C;">
-						
-					</p>
-				</div>
-				<div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-					<div id="destination-controls">
-						<span class="prev me-3" data-controls="prev">
-							<span class="icon-chevron-left"></span>
-
-						</span>
-						<span class="next" data-controls="next">
-							<span class="icon-chevron-right"></span>
-
-						</span>
+					<div class="col-12 col-lg-12 mb-4 mb-lg-4 px-0" data-aos="fade-up" data-aos-delay="100">
+						<a href="/services.html#agriculture" class="activiteItems">
+							<img src="/images/agriculture.jpg" alt="">
+							<div class="desc">
+								<div>
+									<span>Agriculture</span>
+									<div class="hiden">
+										Cliquez pour avoir plus d'information 
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="destination-slider-wrap">
-			<div class="destination-slider">
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/hero_revu_3.jpg" alt="Image" class="img-fluid">
-						<!-- <div class="price">lorem ipsum</div> -->
+					<div class="col-12 col-md-6 col-lg-12 mb-4 mb-lg-4 px-0" data-aos="fade-up" data-aos-delay="100">
+						<a href="/services.html#analyse" class="activiteItems">
+							<img src="/images/analyse_eau.jpg" alt="" style="object-position: bottom;">
+							<div class="desc">
+								<div>
+									<span>Analyse</span>
+									<div class="hiden">
+										Cliquez pour avoir plus d'information 
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
+					<div class="col-12 col-md-6 col-lg-12 mb-4 mb-lg-4 px-0" data-aos="fade-up" data-aos-delay="100">
+						<a href="/services.html#elevage" class="activiteItems">
+							<img src="/images/assets/elevage porcin.jpg" alt="" style="object-position: bottom;">
+							<div class="desc">
+								<div>
+									<span>Elevage</span>
+									<div class="hiden">
+										Cliquez pour avoir plus d'information 
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
-				</div>
-
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/78f44b17-8e23-4dd4-8b6d-c7c423f948ed.jpg" alt="Image" class="img-fluid">
-						<!-- <div class="price">$560</div> -->
+					<div class="col-12 col-md-6 col-lg-12 mb-4 mb-lg-4 px-0" data-aos="fade-up" data-aos-delay="100">
+						<a href="/services.html#engrais" class="activiteItems">
+							<img src="/images/engrais.jpg" alt="" style="object-position: bottom;">
+							<div class="desc">
+								<div>
+									<span>Engrais</span>
+									<div class="hiden">
+										Cliquez pour avoir plus d'information 
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div>
-
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/hero_.jpg" alt="Image" class="img-fluid">
-						<!-- <div class="price">$490</div> -->
-					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div>
-
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/kat-kelley-jMhMXjKAeZY-unsplash.jpg" alt="Image" class="img-fluid">
-						<!-- <div class="price">$490</div> -->
-					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div>
-
-
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/markus-spiske-71uUjIt3cIs-unsplash.jpg" alt="Image" class="img-fluid">
-						<!-- <div class="price">$430</div> -->
-					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div>
-
-				<div class="destination">
-					<div class="thumb">
-						<img src="images/IMG_5691.JPG" alt="Image" class="img-fluid">
-						<!-- <div class="price">$560</div> -->
-					</div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div>
-
-				<!-- <div class="destination">
-					<div class="thumb">
-						<img src="images/IMG_4928.JPG" alt="Image" class="img-fluid"> -->
-						<!-- <div class="price">$490</div> -->
-					<!-- </div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div> -->
-
-				<!-- <div class="destination">
-					<div class="thumb">
-						<img src="images/img-4.jpg" alt="Image" class="img-fluid"> -->
-						<!-- <div class="price">$490</div> -->
-					<!-- </div>
-					<div class="mt-4">
-						<h3><a href="#" style="color: #4D594A; font-weight: 700;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h3>
-						<span class="meta">lorem ipsum dolor</span>
-					</div>
-				</div> -->
-
-			</div>
-		</div>
-
-	</div>
-
-	<div class="section">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-5 mb-4 mb-lg-0 order-lg-2 description_2" data-aos="fade-up">
-					<img src="images/78f44b17-8e23-4dd4-8b6d-c7c423f948ed.jpg" alt="Image" class="img-fluid">
-				</div>
-				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-					<h2 class="heading mb-4" style="color: #1B221C; text-transform: none;"> Une agriculture intégrée et intégrante</h2>
-					<p style="text-transform: none; color:black"><strong>Intégrée</strong> : Définition : « Une agriculture intégrée est un processus dans laquelle la production végétale et la gestion 
-						du bétail se soutiennent mutuellement, de sorte que l’exploitation totale soit supérieure à la somme de ses parties. 
-						Son principal objectif est de rendre l’exploitation rentable tout en minimisant l’impact environnemental. 
-						En effet, les systèmes agricoles intégrés réduisent les incidences sur l’environnement en adaptant le système au site. 
-						L’utilisation efficace de l’eau, des nutriments et de la fertilité du sol est la clé de la durabilité. 
-						Toutefois, le système doit être suffisamment souple pour évoluer en fonction des conditions »</p><br>
-					<p style="text-transform: none; color: black;"><strong>Intégrante</strong> : Développement inclusif, faire participer la population (création d’emplois, direct et indirects).</p>
-					<!-- <p class="my-4" data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-primary">Read
-							more</a></p> -->
+					<div class="fantome col-12 col-md-6 col-lg-12 mb-4 mb-lg-4 px-0" style=" column-span: none;" data-aos="fade-up" data-aos-delay="100"></div>
+	
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<div class="section">
+	<div class="section service-section-1 mobile" style="background-color: #4D594A;">
 		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-5 mb-4 mb-lg-0  description_2">
-					<img src="images/contact.jpg" alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+			<div class="cible-fantome">
+				<div class="heading-content" data-aos="fade-up">
+					<h2 class="heading mb-3" style="color: #ffffff;">Nos Activités</h2>
+					<p class="mb-3" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto eius repellat nulla beatae!</p>
 				</div>
-				<div class="col-lg-5 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-
-					<h2 class="heading mb-5" style="color: #1B221C;">Notre <br> Newsletter</h2>
-
-					<div>
-						<p>
-
-						</p>
-					</div>
-					<div class=" col-12">
-						<div class="widget">
-							<h3 style="color: #1B221C;">Contactez-nous</h3>
-							<address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
-							<ul class="list-unstyled links mb-4">
-								<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
-								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
-								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
-							</ul>
-						</div> <!-- /.widget -->
-					</div> <!-- /.col-lg-3 -->
-					<div class="col-12 d-block">
-						<div style="display: flex; align-items: center;">
-							<input type="mail"  style="padding: 12px 16px; background-color: #F5F6F4; flex: 1; border: none; outline: 1px solid transparent;">
-							<button style="height: 100%; padding: 12px 16px; background-color: #1B221C; color: white; font: 700;">Envoyer</button>
+			</div>
+		</div>
+		<div class="Image_lien">
+			<div class="image_containe">
+				<a href="/services.html#agriculture" class="image_item">
+					<img src="/images/agriculture.jpg" alt="">
+					<div class="desc">
+						<div class="d-flex flex-column align-items-end">
+							<span class="d-block text-right titre">Agriculture</span>
+							<div class="hiden d-block text-right col-10" >
+								Cliquez pour avoir plus d'information 
+							</div>
 						</div>
 					</div>
+				</a>
+				<a href="/services.html#engrais" class="image_item">
+					<img src="/images/engrais.jpg" alt="">
+					<div class="desc">
+						<div class="d-flex flex-column align-items-end">
+							<span class="d-block text-right titre">Engrais</span>
+							<div class="hiden d-block text-right col-10" >
+								Cliquez pour avoir plus d'information 
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="space"></div>
+				<div class="space"></div>
+				<a href="/services.html#elevage" class="image_item">
+					<img src="/images/assets/elevage porcin.jpg" alt="">
+					<div class="desc">
+						<div class="d-flex flex-column align-items-start">
+							<span class="d-block text-left titre">Elevage</span>
+							<div class="hiden d-block text-left col-10" >
+								Cliquez pour avoir plus d'information 
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="/services.html#analyse" class="image_item">
+					<img src="/images/analyse_eau.jpg" alt="">
+					<div class="desc">
+						<div class="d-flex flex-column align-items-start">
+							<span class="d-block text-left titre">Analyse</span>
+							<div class="hiden d-block text-left col-10" >
+								Cliquez pour avoir plus d'information 
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="newsletter" style="background-color: white;">
+		<div class="container">
+			<h2 class="heading mb-5" style="color: #1B221C;">Notre <br> Newsletter</h2>
+			<div>
+				<p></p>
+			</div>
+			<div class=" col-12">
+				<div class="widget">
+					<h3 style="color: #1B221C; text-align: start; text-transform: none;">Contactez-nous</h3>
+					<address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+					<ul class="list-unstyled links mb-4">
+						<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+						<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+						<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+					</ul>
+				</div> <!-- /.widget -->
+			</div> <!-- /.col-lg-3 -->
+			<div class="col-lg-6 col-12 d-block">
+				<div style="display: flex; align-items: center;">
+					<input type="mail"  style="padding: 12px 16px; background-color: #F5F6F4; flex: 1; border: none; outline: 1px solid transparent;" placeholder="Votre address mail">
+					<button style="height: 100%; width: 25%; padding: 12px 16px;  background-color: #1B221C; color: white; font: 700;">Envoyer</button>
 				</div>
 			</div>
 		</div>
@@ -723,20 +844,20 @@
 
 
 	
-	<div class="py-5" style="background-color: #4D594A;">
+	<!-- <div class="py-5" style="background-color: #4D594A;">
 		<div class="container">
 			<div class="row" >
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="site-footer" style="background-color: #C6F598;">
+	<div class="site-footer" style="background-color: #4D594A;">
 		<div class="container">
 
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="widget">
-						<h3 style="color: #1B221C;" id="ancre">A propos
+						<h3  id="ancre">A propos
 							<span  style="display: block; font-size: 24px;">Konji Farm</span>
 							<span class="text-primary">.</span> </h3>
 						<p style="color: #1B221C; text-transform: none;">
@@ -747,37 +868,37 @@
 					<div class="widget">
 						
 						<ul class="list-unstyled social">
-							<li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
-							<!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
+							<li><a href="#" ><span class="icon-instagram" ></span></a></li>
+							<li><a href="#" ><span class="icon-twitter" ></span></a></li>
+							<li><a href="#" ><span class="icon-facebook" ></span></a></li>
+							<li><a href="#" ><span class="icon-linkedin" ></span></a></li>
+							<!-- <li><a href="#" ><span class="icon-pinterest"></span></a></li>
+							<li><a href="#" ><span class="icon-dribbble"></span></a></li> -->
 						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-3 -->
 
 				<div class="col-lg-2 ml-auto">
 					<div class="widget">
-						<h3 style="color: #1B221C;">Liens</h3>
+						<h3 >Liens</h3>
 						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Accueil</a></li>
-							<li><a href="#" style="color: #1B221C;">Elevage</a></li>
-							<li><a href="#" style="color: #1B221C;">Agriculture</a></li>
-							<li><a href="#" style="color: #1B221C;">Analyse</a></li>
-							<li><a href="#" style="color: #1B221C;">Transformation</a></li>
-							<li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
+							<li><a href="#" >Accueil</a></li>
+							<li><a href="#" >Elevage</a></li>
+							<li><a href="#" >Agriculture</a></li>
+							<li><a href="#" >Analyse</a></li>
+							<li><a href="#" >Transformation</a></li>
+							<li><a href="#" >Histoire du projet</a></li>
 						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-3 -->
 
 				<div class="col-lg-2">
 					<div class="widget">
-						<h3 style="color: #1B221C;">Carrieres</h3>
+						<h3 >Carrieres</h3>
 						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Emploi</a></li>
-							<li><a href="#" style="color: #1B221C;">Formation</a></li>
-							<li><a href="#" style="color: #1B221C;">Partenariat</a></li>
+							<li><a href="#" >Emploi</a></li>
+							<li><a href="#" >Formation</a></li>
+							<li><a href="#" >Partenariat</a></li>
 						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-3 -->
@@ -785,11 +906,11 @@
 
 				<div class="col-lg-3">
 					<div class="widget">
-						<h3 style="color: #1B221C;">Contact</h3>
+						<h3 >Contact</h3>
 						<address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
 						<ul class="list-unstyled links mb-4">
-							<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
-								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+							<li><a href="" >+237 697 393 396</a></li>
+								<li><a href="" >+1(514) 557-4237</a></li><br>
 								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
 						</ul>
 					</div> <!-- /.widget -->
@@ -844,12 +965,21 @@
 			const  queryAll = (element) => document.querySelectorAll(element)
 			const query = (element) => document.querySelector(element)
 
+			const cible_fantome = query('.cible-fantome')
+			const fantome = query('.fantome')
 
 			const chevron = queryAll('.chevron')
 			const dropdown= queryAll('.dropdown1')
 			const flech = queryAll('.flech')
 			const closed = queryAll('.menu-close')
 			const menu = query('#site_menu_mobile')
+
+
+			window.onload = () => {
+				const height = cible_fantome.scrollHeight
+				const cible = fantome.style.height = `${height - 23}px`
+			}
+
 
 			const read = () => {
 				chevron.forEach((el, key) => {
