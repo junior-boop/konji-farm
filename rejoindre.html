@@ -67,6 +67,9 @@
 		#site_menu_mobile{
         display: none;
     }
+    .mobile {
+		display: none;
+	}
     @media (max-width : 990px) {
         #site_menu_mobile {
             display: block;
@@ -124,6 +127,37 @@
             height: auto;
             margin: 0 auto;
         }
+        .desktop {
+			display: none;
+		}
+		.mobile {
+			display: block;
+		}
+    }
+
+    .cta-button a::before {
+        content: '';
+        background-color: #dfe1da !important;
+    }
+
+    .font-white * {
+        color: #F0EBF8 !important;
+    }
+    .hero.overlay::before{
+        content: '';
+        background-color: transparent;
+    }
+    .newsletter .container h2 {
+		font-size: 58px;
+		font-weight: 700;
+		line-height: 90%;
+	}
+    .link {
+        height: 168px !important;
+        cursor: pointer;
+    }
+    .link:hover {
+        height: 168px !important;
     }
 	</style>
 </head>
@@ -182,7 +216,7 @@
         </div>
     </div>
 <!--  NAV BAR-->
-	<nav class="site-nav py-2" style="background-color: #4D594A;">
+	<nav class="site-nav py-2" style="background-color: #4D594A; position: static;">
 		<div class="container">
 
 			<div class="site-navigation">
@@ -198,7 +232,7 @@
 							<!-- <li><a href="about.html">Contact</a></li> -->
 							<li class="has-children">
 								<div>
-                                    <a>Nos Activités</a>
+                                    <a style="color: #dfe1da;">Nos Activités</a>
 
                                 </div>
 								<ul class="dropdown">
@@ -224,26 +258,15 @@
 									</li>
 								</ul>
 							</li>
-							<li class="has-children">
-								<a href="#">Nous rejoindre</a>
-								<ul class="dropdown">
-									<li>
-										<a class="btnDevis" href="#">Emploi</a>
-									</li>
-									<li>
-										<a class="btncarriere" href="#">Formation</a>
-									</li>
-									<li>
-										<a class="btnPartenariat" href="#">Partenariat</a>
-									</li>
-								</ul>
+							<li>
+								<a href="/rejoindre.html">Nous rejoindre</a>
 							</li>
-							<li><a href="histoire.html">Histoire du projet</a></li>
+							<li><a href="/histoire.html">Histoire du projet</a></li>
 						</ul>
 					</div>
 					<div class="col-6 col-lg-3 text-lg-end">
 						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
-							<li class="cta-button" ><a href="#ancre" style="background-color: #C6F598; border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
+							<li class="cta-button" ><a href="#ancre" style=" border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
 						</ul>
 
 						<a
@@ -259,6 +282,103 @@
 	</nav>
 
 <!-- FIN NAV BAR -->
+<section>
+    <div class="hero overlay desktop" style="height: 600px; ">
+        <div class="img-bg rellax">
+            <img src="/images/assets/diapos.png" alt="Image" class="img-fluid" width="100%">
+        </div>
+        
+    </div>
+    <div class="hero overlay mobile" style="height: 600px; ">
+        <div class="img-bg rellax">
+            <img src="/images/assets/diapos_mobile.png" alt="Image" class="img-fluid" width="100%">
+        </div>
+        
+    </div>
+    <div class="section font-white" style="background-color: #4D594A;">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-6 mx-auto text-center">
+					<div class="heading-content" data-aos="fade-up">
+						<h2 class="heading">Notre Equipe</h2>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 mb-5 m">
+					<a href="#" class="person">
+						<img src="images/person_1.jpg" alt="Image" class="img-fluid mb-4">
+						<span class="subheading d-block">CEO, Founder</span>
+						<h2 class="mb-3">NYAMSY Johan</h2>
+						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="#" class="person">
+						<img src="images/person_2.jpg" alt="Image" class="img-fluid mb-4">
+						<span class="subheading d-block">Assistante de Direction</span>
+						<h2 class="mb-3">TIMTHOUAM SIMO Tatina</h2>
+						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="#" class="person">
+						<img src="images/person_3.jpg" alt="Image" class="img-fluid mb-4">
+						<span class="subheading d-block">Responsable Phytosanitaire</span>
+						<h2 class="mb-3">ONANA BELOMO Cédric</h2>
+						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="#" class="person">
+						<img src="images/person_3.jpg" alt="Image" class="img-fluid mb-4">
+						<span class="subheading d-block">chargée Marketing et Commerciale</span>
+						<h2 class="mb-3">AKAME Patricia Stéphanie</h2>
+						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="#" class="person">
+						<img src="images/person_2.jpg" alt="Image" class="img-fluid mb-4">
+						<span class="subheading d-block">Receptionniste</span>
+						<h2 class="mb-3">NDASI Vitalist</h2>
+						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="py-5" style="background-color: #dfe1da;">
+        <div class="container">
+            <div class="px-3" style="font-size: 42px; font-family: Minion Pro;">
+                Rejoignez-nous
+            </div>
+        </div>
+        <div class="container py-5">
+            <a class=" link col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="p-5" style=" background-color: #4D594A;">
+                    <div style="color: white;font-size: 24px; font-family: Minion Pro;">Faire un devis</div>
+                    <div style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos praesentium sed quidem.</div>
+                </div>
+            </a>
+            <a class=" link col-12 col-lg-4 mb-3 mb-lg-0" >
+                <div class="p-5" style="  background-color: #4D594A;">
+                    <div style="color: white;font-size: 24px; font-family: Minion Pro;">Carrières</div>
+                    <div style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos praesentium sed quidem.</div>
+                </div>
+            </a>
+            <a class=" link col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="p-5" style=" background-color: #4D594A;">
+                    <div style="color: white;font-size: 24px; font-family: Minion Pro;">Partenariat</div>
+                    <div style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos praesentium sed quidem.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <section id="devis" style="background-color: #F0EBF8;">
     <div style="height: 175px;"></div>
@@ -266,9 +386,8 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7quynxihN0Ilqekwvvtu1e8go1sPQrCYfvK89oXrllPm8Bw/viewform?usp=sf_link" style="height: 2000px; width: 500px; margin: 0 auto;" frameborder="0" ></iframe>
     </div>
 </section>
- 
 
-<section id="agriculture">
+<section id="carriere">
     <div class="hero overlay">
         <div class="img-bg rellax">
             <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%">
@@ -483,7 +602,7 @@
     
 </section>
 
-<section id="transformation">
+<section id="partenariat">
     <div class="hero overlay">
         <div class="img-bg rellax">
             <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%" />
@@ -787,103 +906,117 @@
 
 
 
-	<div class="py-5" style="background-color: #4D594A;">
-		<div class="container">
-			<div class="row" >
-				<!-- <div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
-					<h3 class="text-white m-0">Begin your adventurous journey here.</h3>
-				</div>
-				<div class="col-lg-5 text-center text-lg-end">
-					<a href="#" class="btn btn-outline-white">Get started</a>
-				</div> -->
-			</div>
-		</div>
-	</div>
 
-	<div class="site-footer" style="background-color: #C6F598;">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 style="color: #1B221C;" id="ancre">A propos
-							<span  style="display: block; font-size: 24px;">Konji Farm</span>
-							<span class="text-primary">.</span> </h3>
-						<p style="color: #1B221C; text-transform: none;">
-							améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
-							respectueux de l’écosystème dans lequel elle s’inscrit.
-						</p>
-					</div> <!-- /.widget -->
-					<div class="widget">
-						
-						<ul class="list-unstyled social">
-							<li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
-							<!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2 ml-auto">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Liens</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Accueil</a></li>
-							<li><a href="#" style="color: #1B221C;">Elevage</a></li>
-							<li><a href="#" style="color: #1B221C;">Agriculture</a></li>
-							<li><a href="#" style="color: #1B221C;">Analyse</a></li>
-							<li><a href="#" style="color: #1B221C;">Transformation</a></li>
-							<li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Carrieres</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Emploi</a></li>
-							<li><a href="#" style="color: #1B221C;">Formation</a></li>
-							<li><a href="#" style="color: #1B221C;">Partenariat</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-
-				<div class="col-lg-3">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Contact</h3>
-						<address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
-						<ul class="list-unstyled links mb-4">
-							<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
-								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
-								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-			</div> <!-- /.row -->
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
-						<script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
-					</p>
-				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.site-footer -->
-
-		<!-- Preloader -->
-		<div id="overlayer"></div>
-		<div class="loader">
-			<div class="spinner-border text-primary" role="status">
-				<span class="visually-hidden">Loading...</span>
-			</div>
-		</div>
+<div class="newsletter" style="background-color: white;">
+    <div class="container">
+        <h2 class="heading mb-5" style="color: #1B221C;">Notre <br> Newsletter</h2>
+        <div>
+            <p></p>
+        </div>
+        <div class=" col-12">
+            <div class="widget">
+                <h3 style="color: #1B221C; text-align: start; text-transform: none;">Contactez-nous</h3>
+                <address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+                <ul class="list-unstyled links mb-4">
+                    <li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+                    <li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+                    <li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+                </ul>
+            </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+        <div class="col-lg-6 col-12 d-block px-0">
+            <div style="display: flex; align-items: center;">
+                <input type="mail"  style="padding: 12px 16px; background-color: #F5F6F4; flex: 1; border: none; outline: 1px solid transparent;" placeholder="Votre address mail">
+                <button style="height: 100%; width: 25%; padding: 12px 16px;  background-color: #1B221C; color: white; font: 700;">Envoyer</button>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="site-footer" style="background-color: #C6F598;">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3 style="color: #1B221C;" id="ancre">A propos
+                        <span  style="display: block; font-size: 24px;">Konji Farm</span>
+                        <span class="text-primary">.</span> </h3>
+                    <p style="color: #1B221C; text-transform: none;">
+                        améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
+                        respectueux de l’écosystème dans lequel elle s’inscrit.
+                    </p>
+                </div> <!-- /.widget -->
+                <div class="widget">
+                    
+                    <ul class="list-unstyled social">
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
+                        <!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+            <div class="col-lg-2 ml-auto">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Liens</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#" style="color: #1B221C;">Accueil</a></li>
+                        <li><a href="#" style="color: #1B221C;">Elevage</a></li>
+                        <li><a href="#" style="color: #1B221C;">Agriculture</a></li>
+                        <li><a href="#" style="color: #1B221C;">Analyse</a></li>
+                        <li><a href="#" style="color: #1B221C;">Transformation</a></li>
+                        <li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+            <div class="col-lg-2">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Carrieres</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#" style="color: #1B221C;">Emploi</a></li>
+                        <li><a href="#" style="color: #1B221C;">Formation</a></li>
+                        <li><a href="#" style="color: #1B221C;">Partenariat</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Contact</h3>
+                    <address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+                            <li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+                            <li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
+                    <script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
+                </p>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</div>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
@@ -999,10 +1132,10 @@
                     location.reload()
                 }
             });
-            if(navbar.length === 0){
-                window.location.hash = '#devis'
-                location.reload()
-            }
+            // if(navbar.length === 0){
+            //     window.location.hash = '#devis'
+            //     location.reload()
+            // }
 
             const h = hash.replace('#', '')
             section.forEach(el => {

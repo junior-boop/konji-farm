@@ -225,6 +225,12 @@
         }
     }
 
+    .newsletter .container h2 {
+		font-size: 58px;
+		font-weight: 700;
+		line-height: 90%;
+	}
+
     </style>
 </head>
 
@@ -253,10 +259,10 @@
                             <a class="btnAgriculture" href="/services.html#agriculture">Agriculture</a>
                         </li>
                         <li>
-                            <a class="btnTransform" href="/services.html#transformation">Transformation</a>
+                            <a class="btnEngrais" href="/services.html#engrais">Engrais</a>
                         </li>
                         <li>
-                            <a>Analyse</a>
+                            <a class="btnAnalyse" href="/services.html#analyse">Analyse</a>
                         </li>
                     </ul>
                 </li>
@@ -298,8 +304,7 @@
 							<!-- <li><a href="about.html">Contact</a></li> -->
 							<li class="has-children">
 								<div>
-                                    <a>Nos Activités</a>
-
+                                    <a href="/services.html" style="color: white;">Nos Activités</a>
                                 </div>
 								<ul class="dropdown">
 									<li>
@@ -309,18 +314,10 @@
 										<a class="btnAgriculture" href="#agriculture">Agriculture</a>
 									</li>
 									<li>
-										<a class="btnTransform" href="#transformation">Transformation</a>
+										<a class="btnEngrais" href="#Engrais">Engrais</a>
 									</li>
 									<li>
-										<a href="">Analyse</a>
-										<ul class="dropdown">
-											<li>
-												<li>
-													<a href="#">Présentation du laboratoire</a>
-													
-												</li>
-											</li>
-										</ul>
+										<a class="btnAnalyse" href="/services.html#analyse">Analyse</a>
 									</li>
 								</ul>
 							</li>
@@ -343,7 +340,7 @@
 					</div>
 					<div class="col-6 col-lg-3 text-lg-end">
 						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
-							<li class="cta-button" ><a href="#ancre" style="background-color: #C6F598; border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
+							<li class="cta-button" ><a href="#ancre" style=" border: none; color: #1B221C; padding: 16px 24px; font-weight: 600;">Nous contacter</a></li>
 						</ul>
 
 						<a
@@ -357,13 +354,15 @@
 
 		</div>
 	</nav>
-
 <!-- FIN NAV BAR -->
 
 <section id="elevage">
     <div class="hero overlay">
         <div class="img-bg rellax">
-            <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%">
+            <picture>
+                <img media="(min-width : 1080px)" srcset=" /images/assets/IMG_20231012_190455_077.png 1080w, /images/services.jpg" src="/images/services.jpg" />
+                <!-- <img src="/images/assets/IMG_20231012_190455_077.png" alt=""> -->
+            </picture>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-start">
@@ -386,7 +385,7 @@
             </div>
         </div>
     </div>
- 
+
     
     <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
         <div class="container">
@@ -532,79 +531,6 @@
         </div>
     
     </div>
-    
-    <!-- <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
-                <div class="col-lg-5" data-aos="fade-up">
-                    <div class="grand_titre">
-                        <div>
-                            <img src="/images/aviculture_white.png" alt="">
-                        </div>
-                        <h2 class="heading mb-3" style="color: #1B221C;">Aviculture</h2>
-                    </div>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minus, placeat repellendus quis earum fugit doloribus facilis incidunt quam ex ipsam odio tempore possimus libero obcaecati repellat. Quos, cum natus.
-                    </p>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt repudiandae incidunt nulla ex quas sint adipisci sequi aut consequatur! Odit aliquam corporis nam reiciendis adipisci est omnis perspiciatis, officiis minus nihil ducimus error voluptatem porro non suscipit quod nemo alias ipsam ab facere itaque deleniti! Maiores iure perferendis porro tenetur officiis praesentium accusantium, ipsum id veritatis. In, harum, hic, quasi suscipit sit labore ad deleniti laborum magni officiis repellat.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-lg-flex d-none align-items-center justify-content-center">
-                        <img src="/images/aviculture_white.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">3000</div>
-                            <div class="bas"> Poisson de 2 espèces <br> élevés l'année dernière </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="my-3" style="color: #1B221C; font-weight: 600;">Quelque Images</h1>
-                </div>
-                <div class="gallerie-slide">
-                    <div class="images-gallerie">
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div> -->
 </section>
  
 
@@ -633,7 +559,7 @@
         </div>
     </div>
     
-    <div class="section service-section-1" style="background-color: #1B221C;">
+    <!-- <div class="section service-section-1" style="background-color: #1B221C;">
         <div class="container">
             <div class="row" style="color: #1B221C;">
                 <div class=" col-lg-4 mb-4 mb-lg-0">
@@ -673,7 +599,7 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     
     <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
         <div class="container">
@@ -823,7 +749,7 @@
     
 </section>
 
-<section id="transformation">
+<section id="engrais">
     <div class="hero overlay">
         <div class="img-bg rellax">
             <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%" />
@@ -832,8 +758,8 @@
             <div class="row align-items-center justify-content-start">
                 <div class="col-lg-5">
     
-                    <h1 class="heading" data-aos="fade-up">Services</h1>
-                    <p class="mb-5" data-aos="fade-up">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h1 class="heading" data-aos="fade-up">Engrais</h1>
+                    <p class="mb-5" data-aos="fade-up">KONJI GROW est la marque d'engrais bio d'origine animale mise sur pied par KONJI FARM. il est issu des déjection de poissons et de porc, ce qui fait de lui un puissant pour les agriculteurs qui sont soucieux de la santé de leurs plantes et des consommateurs. </p>
     
                     <div data-aos="fade-up">
                         <a href="https://www.youtube.com/watch?v=cIybaOWeJlU" class="play-button align-items-center d-flex glightbox3" >
@@ -847,64 +773,7 @@
             </div>
         </div>
     </div>
-    
-    <div class="section service-section-1">
-        <div class="container">
-            <div class="row" style="color: #1B221C;">
-                <div class=" col-lg-4 mb-4 mb-lg-0">
-                    <div class="description-img" data-aos="fade-up">
-                        <img src="/images/hero_.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row" >
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0 px-2" data-aos="fade-up" data-aos-delay="300">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/pisciculture.png" alt="Image" class="img-fluid"/>
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Pisciculture</h3>
-                                    <p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
-                                        nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
-                                        de déterminer avec précision les composants que nous consommons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/porcin.png" alt="Image" class="img-fluid"/>
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Elevage porcin</h3>
-                                    <p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
-                                        nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
-                                        de déterminer avec précision les composants que nous consommons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/aviculture.png" alt="Image" class="img-fluid"/>
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Aviculture</h3>
-                                    <p style="color: #1B221C; text-transform: none;">La transformation des aliments est un processus complexe, qui permet de créer une variété infinie des produits
-                                        alimentaires. La transformation joue un role crucial en convertissant les matières premières brutes en produits finis consommables. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </div>
+   
     
     <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
         <div class="container">
@@ -978,164 +847,23 @@
         </div>
     
     </div>
-    <div class="section section-3" style="background-color: #1B221C;" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
-                <div class="col-lg-5" data-aos="fade-up">
-                    <div class="grand_titre">
-                        <div>
-                            <img src="images/porcin.png" alt="">
-                        </div>
-                        <h2 class="heading mb-3" style="color: white;">Elevage porcin</h2>
-                    </div>
-                    <p style="color: white;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minus, placeat repellendus quis earum fugit doloribus facilis incidunt quam ex ipsam odio tempore possimus libero obcaecati repellat. Quos, cum natus.
-                    </p>
-                    <p style="color: white;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt repudiandae incidunt nulla ex quas sint adipisci sequi aut consequatur! Odit aliquam corporis nam reiciendis adipisci est omnis perspiciatis, officiis minus nihil ducimus error voluptatem porro non suscipit quod nemo alias ipsam ab facere itaque deleniti! Maiores iure perferendis porro tenetur officiis praesentium accusantium, ipsum id veritatis. In, harum, hic, quasi suscipit sit labore ad deleniti laborum magni officiis repellat.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-lg-flex d-none align-items-center justify-content-center">
-                        <img src="images/porcinvector.png" alt="" width="100%">
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">3000</div>
-                            <div class="bas"> Poisson de 2 espèces <br> élevés l'année dernière </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="my-3" style="color: white; font-weight: 600;">Quelque Images</h1>
-                </div>
-                <div class="gallerie-slide">
-                    <div class="images-gallerie">
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div>
-    
-    <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
-                <div class="col-lg-5" data-aos="fade-up">
-                    <div class="grand_titre">
-                        <div>
-                            <img src="images/aviculture_white.png" alt="">
-                        </div>
-                        <h2 class="heading mb-3" style="color: #1B221C;">Aviculture</h2>
-                    </div>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minus, placeat repellendus quis earum fugit doloribus facilis incidunt quam ex ipsam odio tempore possimus libero obcaecati repellat. Quos, cum natus.
-                    </p>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt repudiandae incidunt nulla ex quas sint adipisci sequi aut consequatur! Odit aliquam corporis nam reiciendis adipisci est omnis perspiciatis, officiis minus nihil ducimus error voluptatem porro non suscipit quod nemo alias ipsam ab facere itaque deleniti! Maiores iure perferendis porro tenetur officiis praesentium accusantium, ipsum id veritatis. In, harum, hic, quasi suscipit sit labore ad deleniti laborum magni officiis repellat.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-lg-flex d-none align-items-center justify-content-center">
-                        <img src="images/aviculture_white.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">3000</div>
-                            <div class="bas"> Poisson de 2 espèces <br> élevés l'année dernière </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="my-3" style="color: #1B221C; font-weight: 600;">Quelque Images</h1>
-                </div>
-                <div class="gallerie-slide">
-                    <div class="images-gallerie">
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div>
+  
 </section>
 
 <section id="analyse">
     <div class="hero overlay">
         <div class="img-bg rellax">
-            <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%">
+            <picture>
+                <source media="(min-width:1080px)" srcset="/images/services.jpg" />
+                <img src="/images/assets/engrais.png" alt="Image" class="img-fluid" width="100%">
+            </picture>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-start">
                 <div class="col-lg-5">
     
-                    <h1 class="heading" data-aos="fade-up">Services</h1>
-                    <p class="mb-5" data-aos="fade-up">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h1 class="heading" data-aos="fade-up">Analyse</h1>
+                    <p class="mb-5" data-aos="fade-up">KONJI LAB est spécialisé dans l'analyse des eaux, du sol, des aliments et des engrais. il permet d'analyser les produits issus des champs et de nos fermes. Mais aussi, de tous les éléments intervenants dasn le processus du choix des intrants au produit final.</p>
     
                     <div data-aos="fade-up">
                         <a href="https://www.youtube.com/watch?v=cIybaOWeJlU" class="play-button align-items-center d-flex glightbox3" >
@@ -1146,64 +874,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="section service-section-1">
-        <div class="container">
-            <div class="row" style="color: #1B221C;">
-                <div class=" col-lg-4 mb-4 mb-lg-0">
-                    <div class="description-img" data-aos="fade-up">
-                        <img src="/images/hero_.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row" >
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0 px-2" data-aos="fade-up" data-aos-delay="300">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/pisciculture.png" alt="Image" class="img-fluid">
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Pisciculture</h3>
-                                    <p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
-                                        nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
-                                        de déterminer avec précision les composants que nous consommons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/porcin.png" alt="Image" class="img-fluid">
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Elevage porcin</h3>
-                                    <p style="color: #1B221C; text-transform: none;">L'analyse des aliments est une étape essentielle pour garantir la sécurité, la qualité et la valeur
-                                        nutritionnelle de ce que nous consommons. Grace à des techniques avancées, nous sommes en mesure 
-                                        de déterminer avec précision les composants que nous consommons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
-                            <div class="service-1 ps-lg-5">
-                                <span>
-                                    <img src="images/aviculture.png" alt="Image" class="img-fluid">
-                                </span>
-                                <div>
-                                    <h3 style="color: #1B221C;">Aviculture</h3>
-                                    <p style="color: #1B221C; text-transform: none;">La transformation des aliments est un processus complexe, qui permet de créer une variété infinie des produits
-                                        alimentaires. La transformation joue un role crucial en convertissant les matières premières brutes en produits finis consommables. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
             </div>
         </div>
     </div>
@@ -1280,250 +950,132 @@
         </div>
     
     </div>
-    <div class="section section-3" style="background-color: #1B221C;" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
-                <div class="col-lg-5" data-aos="fade-up">
-                    <div class="grand_titre">
-                        <div>
-                            <img src="images/porcin.png" alt="">
-                        </div>
-                        <h2 class="heading mb-3" style="color: white;">Elevage porcin</h2>
-                    </div>
-                    <p style="color: white;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minus, placeat repellendus quis earum fugit doloribus facilis incidunt quam ex ipsam odio tempore possimus libero obcaecati repellat. Quos, cum natus.
-                    </p>
-                    <p style="color: white;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt repudiandae incidunt nulla ex quas sint adipisci sequi aut consequatur! Odit aliquam corporis nam reiciendis adipisci est omnis perspiciatis, officiis minus nihil ducimus error voluptatem porro non suscipit quod nemo alias ipsam ab facere itaque deleniti! Maiores iure perferendis porro tenetur officiis praesentium accusantium, ipsum id veritatis. In, harum, hic, quasi suscipit sit labore ad deleniti laborum magni officiis repellat.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-lg-flex d-none align-items-center justify-content-center">
-                        <img src="images/porcinvector.png" alt="" width="100%">
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">3000</div>
-                            <div class="bas"> Poisson de 2 espèces <br> élevés l'année dernière </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="my-3" style="color: white; font-weight: 600;">Quelque Images</h1>
-                </div>
-                <div class="gallerie-slide">
-                    <div class="images-gallerie">
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div>
-    
-    <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
-                <div class="col-lg-5" data-aos="fade-up">
-                    <div class="grand_titre">
-                        <div>
-                            <img src="images/aviculture_white.png" alt="">
-                        </div>
-                        <h2 class="heading mb-3" style="color: #1B221C;">Aviculture</h2>
-                    </div>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, minus, placeat repellendus quis earum fugit doloribus facilis incidunt quam ex ipsam odio tempore possimus libero obcaecati repellat. Quos, cum natus.
-                    </p>
-                    <p style="color: #1B221C;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt repudiandae incidunt nulla ex quas sint adipisci sequi aut consequatur! Odit aliquam corporis nam reiciendis adipisci est omnis perspiciatis, officiis minus nihil ducimus error voluptatem porro non suscipit quod nemo alias ipsam ab facere itaque deleniti! Maiores iure perferendis porro tenetur officiis praesentium accusantium, ipsum id veritatis. In, harum, hic, quasi suscipit sit labore ad deleniti laborum magni officiis repellat.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-lg-flex d-none align-items-center justify-content-center">
-                        <img src="images/aviculture_white.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-10 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">3000</div>
-                            <div class="bas"> Poisson de 2 espèces <br> élevés l'année dernière </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element">
-                            <div class="haut">Plus de</div>
-                            <div class="chiffre">23</div>
-                            <div class="bas"> back a poisson <br> dans 4 villes au Cameroun</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="my-3" style="color: #1B221C; font-weight: 600;">Quelque Images</h1>
-                </div>
-                <div class="gallerie-slide">
-                    <div class="images-gallerie">
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="/images/hero_revu_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div>
 </section>
 
-	<div class="py-5" style="background-color: #4D594A;">
-		<div class="container">
-			<div class="row" >
-				<!-- <div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
-					<h3 class="text-white m-0">Begin your adventurous journey here.</h3>
-				</div>
-				<div class="col-lg-5 text-center text-lg-end">
-					<a href="#" class="btn btn-outline-white">Get started</a>
-				</div> -->
-			</div>
-		</div>
-	</div>
-
-	<div class="site-footer" style="background-color: #C6F598;">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 style="color: #1B221C;" id="ancre">A propos
-							<span  style="display: block; font-size: 24px;">Konji Farm</span>
-							<span class="text-primary">.</span> </h3>
-						<p style="color: #1B221C; text-transform: none;">
-							améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
-							respectueux de l’écosystème dans lequel elle s’inscrit.
-						</p>
-					</div> <!-- /.widget -->
-					<div class="widget">
-						
-						<ul class="list-unstyled social">
-							<li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
-							<!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
-							<li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2 ml-auto">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Liens</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Accueil</a></li>
-							<li><a href="#" style="color: #1B221C;">Elevage</a></li>
-							<li><a href="#" style="color: #1B221C;">Agriculture</a></li>
-							<li><a href="#" style="color: #1B221C;">Analyse</a></li>
-							<li><a href="#" style="color: #1B221C;">Transformation</a></li>
-							<li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Carrieres</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="#" style="color: #1B221C;">Emploi</a></li>
-							<li><a href="#" style="color: #1B221C;">Formation</a></li>
-							<li><a href="#" style="color: #1B221C;">Partenariat</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-
-				<div class="col-lg-3">
-					<div class="widget">
-						<h3 style="color: #1B221C;">Contact</h3>
-						<address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
-						<ul class="list-unstyled links mb-4">
-							<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
-								<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
-								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-			</div> <!-- /.row -->
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
-						<script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
-					</p>
-				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.site-footer -->
-
-		<!-- Preloader -->
-		<div id="overlayer"></div>
-		<div class="loader">
-			<div class="spinner-border text-primary" role="status">
-				<span class="visually-hidden">Loading...</span>
-			</div>
-		</div>
+<div class="py-5" style="background-color: #4D594A;">
+    <div class="container">
+        <div class="row" >
+            <!-- <div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
+                <h3 class="text-white m-0">Begin your adventurous journey here.</h3>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end">
+                <a href="#" class="btn btn-outline-white">Get started</a>
+            </div> -->
+        </div>
     </div>
+</div>
+
+<div class="newsletter" style="background-color: white;">
+    <div class="container">
+        <h2 class="heading mb-5" style="color: #1B221C;">Notre <br> Newsletter</h2>
+        <div>
+            <p></p>
+        </div>
+        <div class=" col-12">
+            <div class="widget">
+                <h3 style="color: #1B221C; text-align: start; text-transform: none;">Contactez-nous</h3>
+                <address style="text-transform: none; ">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+                <ul class="list-unstyled links mb-4">
+                    <li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+                    <li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+                    <li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+                </ul>
+            </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+        <div class="col-lg-6 col-12 d-block px-0">
+            <div style="display: flex; align-items: center;">
+                <input type="mail"  style="padding: 12px 16px; background-color: #F5F6F4; flex: 1; border: none; outline: 1px solid transparent;" placeholder="Votre address mail">
+                <button style="height: 100%; width: 25%; padding: 12px 16px;  background-color: #1B221C; color: white; font: 700;">Envoyer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="site-footer" style="background-color: #4D594A;">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3 style="color: #1B221C;" id="ancre">A propos
+                        <span  style="display: block; font-size: 24px;">Konji Farm</span>
+                        <span class="text-primary">.</span> </h3>
+                    <p style="color: #1B221C; text-transform: none;">
+                        améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
+                        respectueux de l’écosystème dans lequel elle s’inscrit.
+                    </p>
+                </div> <!-- /.widget -->
+                <div class="widget">
+                    
+                    <ul class="list-unstyled social">
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-instagram" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-twitter" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-facebook" style="color: #1B221C;"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-linkedin" style="color: #1B221C;"></span></a></li>
+                        <!-- <li><a href="#" style="color: #1B221C;"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#" style="color: #1B221C;"><span class="icon-dribbble"></span></a></li> -->
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+            <div class="col-lg-2 ml-auto">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Liens</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#" style="color: #1B221C;">Accueil</a></li>
+                        <li><a href="#" style="color: #1B221C;">Elevage</a></li>
+                        <li><a href="#" style="color: #1B221C;">Agriculture</a></li>
+                        <li><a href="#" style="color: #1B221C;">Analyse</a></li>
+                        <li><a href="#" style="color: #1B221C;">Transformation</a></li>
+                        <li><a href="#" style="color: #1B221C;">Histoire du projet</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+            <div class="col-lg-2">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Carrieres</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#" style="color: #1B221C;">Emploi</a></li>
+                        <li><a href="#" style="color: #1B221C;">Formation</a></li>
+                        <li><a href="#" style="color: #1B221C;">Partenariat</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h3 style="color: #1B221C;">Contact</h3>
+                    <address style="text-transform: none; color: black;">Nous sommes situés au Cameroun à Yaoundé en face de l'ancien FEICOM</address>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
+                            <li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+                            <li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
+                    <script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
+                </p>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</div>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
@@ -1607,29 +1159,48 @@
         
             const load = () => {
                 const navbar = window.location.hash
-            const section1 = document.querySelector('#elevage')
-            const section2 = document.querySelector('#agriculture')
-            const section3 = document.querySelector('#transformation')
-            const section4 = document.querySelector('#analyse')
-            const btnElevage = document.querySelectorAll('.btnElevage')
+                const section1 = document.querySelector('#elevage')
+                const section2 = document.querySelector('#agriculture')
+                const section3 = document.querySelector('#engrais')
+                const section4 = document.querySelector('#analyse')
+                const btnElevage = document.querySelectorAll('.btnElevage')
+                const btnAgriculture = queryAll('.btnAgriculture')
+                const btnEngrais = queryAll('.btnEngrais')
+                const btnAnalyse = queryAll('.btnAnalyse')
 
 
-
-            const btnAgriculture = queryAll('.btnAgriculture')
+            
                 const section = queryAll('section')
                 const hash = window.location.hash
+
                 btnElevage.forEach(element => {
-                element.onclick = () => {
-                    window.location.hash = '#elevage'
-                    location.reload()
-                }
-            });
-            btnAgriculture.forEach(element => {
-                element.onclick = () => {
-                    window.location.hash = '#agriculture'
-                    location.reload()
-                }
-            });
+                    element.onclick = () => {
+                        window.location.hash = '#elevage'
+                        location.reload()
+                    }
+                });
+
+                btnAgriculture.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#agriculture'
+                        location.reload()
+                    }
+                });
+
+                btnEngrais.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#engrais'
+                        location.reload()
+                    }
+                });
+
+                btnAnalyse.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#analyse'
+                        location.reload()
+                    }
+                });
+
                 if(navbar.length === 0){
                     window.location.hash = '#elevage'
                     location.reload()
