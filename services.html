@@ -278,6 +278,20 @@
         font-size: 24px;
         font-weight: 600;
     }
+    .video_controler {
+        width: 400px;
+        aspect-ratio: 1;
+    }
+    @media (max-width : 990px) {
+        .video_controler {
+            width: 100%;
+            aspect-ratio: 1;
+        }
+
+        .heading_mobile {
+            font-size: 52px !important;
+        }
+    }
     .stats {
         height: 235.5px;
     }
@@ -332,6 +346,8 @@
     a.btn:hover::before {
         transform: scale(1.1);
     }
+
+    
     </style>
 </head>
 
@@ -360,10 +376,10 @@
                             <a class="btnAgriculture" href="/services.html#agriculture">Agriculture</a>
                         </li>
                         <li>
-                            <a class="btnTransform" href="/services.html#transformation">Engrais</a>
+                            <a class="btnEngrais" href="/services.html#engrais">Engrais</a>
                         </li>
                         <li>
-                            <a>Analyse</a>
+                            <a class="btnAnalyse" href="/services.html#analyse">Analyse</a>
                         </li>
                     </ul>
                 </li>
@@ -407,17 +423,17 @@
                             <a>Nos Activités</a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="/services.html#elevage">Elevage</a>
+                                    <a class="btnElevage" href="/services.html#elevage">Elevage</a>
                                     
                                 </li>
                                 <li>
-                                    <a href="/services.html#agriculture">Agriculture</a>
+                                    <a class="btnAgriculture" href="/services.html#agriculture">Agriculture</a>
                                 </li>
                                 <li>
-                                    <a href="/services.html#engrais">Engrais</a>
+                                    <a class="btnEngrais" href="/services.html#engrais">Engrais</a>
                                 </li>
                                 <li>
-                                    <a href="/services.html#analyse">Analyse</a>
+                                    <a class="btnAnalyse" href="/services.html#analyse">Analyse</a>
                                     
                                 </li>
                             </ul>
@@ -461,51 +477,47 @@
 <section id="elevage">
     <div class="hero overlay">
         <div class="img-bg rellax">
-            <img src="/images/services.jpg" alt="Image" class="img-fluid" width="100%">
+            <img media="(min-width : 1080px)" srcset=" /images/assets/elevage.png 1080w, /images/services.jpg" src="/images/services.jpg" alt="Image" class="img-fluid" width="100%">
         </div>
-        <div class="container">
-            <div class="row align-items-center justify-content-start">
+        <div class="container d-flex d-lg-block align-items-center" style = " height: 400px;">
+            <div class="row align-items-end justify-content-start">
                 <div class="col-lg-5">
-    
-                    <h1 class="heading" data-aos="fade-up">Elevage</h1>
-                    <p class="mb-5" data-aos="fade-up" style="text-transform: none;">KONJI MEAT & FISH est une filiale chargée des produits issus de l'élevage. Il dispose des meilleurs techniciens du domaine, jeunes et motivés.
-                        Les techniques piscicoles sont respectées, ainsi que ceux de l'élevage porcin pour garantir une viande saine et directement consommable par les populations.
-                    </p>
-    
-                    <div data-aos="fade-up">
-                            <span class="icon-button me-3">
-                                <span class="icon-play"></span>
-                            </span>
-                            <span class="caption">Voir la video</span>
-                        </video>
-                    </div>
+                    <h1 class="heading heading_mobile" data-aos="fade-up">Elevage</h1>
+                    
                 </div>
             </div>
         </div>
     </div>
- 
+    <div class="section service-section-1" style = "background-color: #4D594A;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5 mt-5 mt-lg-0" style="text-transform: none; font-size: 16px; color: white;" data-aos="fade-up" data-aos-delay="100">
+                    <div>KONJI MEAT & FISH,</div> 
+                     est une filiale chargée des produits issus de l'élevage. Il dispose des meilleurs techniciens du domaine, jeunes et motivés.
+                        Les techniques piscicoles sont respectées, ainsi que ceux de l'élevage porcin pour garantir une viande saine et directement consommable par les populations.
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="section section-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">
         <div class="container">
             <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="grand_titre">
-                        <div>
-                            <img src="/images/pisciculture_2.png" alt="">
-                        </div>
                         <h2 class="heading mb-3" style="color: #1B221C;">Pisciculture</h2>
                     </div>
                     
                     <p style="color: #1B221C; text-transform: none;">
-                                                Nous faisons l’élevage hors sol de Poissons silures encore appelés “poisson chat” de
+                        Nous faisons l’élevage hors sol de Poissons silures encore appelés “poisson chat” de
                         l’espèce « Clarias girapinus ». Avec 08 bacs de 05 m 3 chacun, la production moyenne est de 750 KG
                         par contenant.En effet, l’eau de forage est recueillie dans les bacs et circule à travers un filtre
                         mécanique et biologique grâce à une pompe.
                     </p>
                 </div>
                 <div class="col-lg-4 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="video-container d-lg-flex d-none align-items-center justify-content-center">
-                        <video src="images/assets/4_5852460211490527290.MP4" id = "pisciculture_1"  class="play-button align-items-center d-flex glightbox3" style="height: 400px; width: 400px;" id="video_controle"></video>
+                    <div class="video-container d-lg-flex align-items-center justify-content-center">
+                        <video src="/images/assets/4_5852460211490527290.MP4" id = "pisciculture_1"  class="play-button align-items-center d-flex glightbox3 video_controler"></video>
                         <div class="controleur">
                             <a  class = 'play_button' data-target="#pisciculture_1" data-aos="fade-up" style="color: #000;">
                                 <!-- <a href="https://www.youtube.com/watch?v=cIybaOWeJlU" class="play-button align-items-center d-flex glightbox3" > -->
@@ -582,17 +594,14 @@
             <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="grand_titre">
-                        <div>
-                            <img src="images/porcin.png" alt="">
-                        </div>
                         <h2 class="heading mb-3" style="color: white; text-transform: none;">Elevage porcin</h2>
                     </div>
                     
                     <p style="color: white; text-transform: none;">
                         KONJI FARM élève les cochons de la race TN60 issu d’un croisement. Ils pèsent
-entre 90 KG et 100 KG après 06 mois et peuvent aller jusqu’à 150 KG après 9mois. Contrairement aux
-autres races le TN60 possède peu de graisse et une chair ferme. Nous avons également des porcelets
-qui ont en moyenne 35 KG au sevrage.
+                        entre 90 KG et 100 KG après 06 mois et peuvent aller jusqu’à 150 KG après 9mois. Contrairement aux
+                        autres races le TN60 possède peu de graisse et une chair ferme. Nous avons également des porcelets
+                        qui ont en moyenne 35 KG au sevrage.
                     </p>
                 </div>
                 <!-- <div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
@@ -601,8 +610,8 @@ qui ont en moyenne 35 KG au sevrage.
                     </div>
                 </div> -->
                 <div class="col-lg-4 text-md-end" data-aos="fade-up" data-aos-delay="100">
-                    <div class="video-container d-lg-flex d-none align-items-center justify-content-center">
-                        <video src="images/assets/elevage porcin.mp4" id="elevage_1" class="play-button align-items-center d-flex glightbox3" style="height: 400px; width: 400px;" id="video_controle"></video>
+                    <div class="video-container d-lg-flex align-items-center justify-content-center">
+                        <video src="/images/assets/elevage porcin.mp4" id="elevage_1" class="play-button align-items-center d-flex glightbox3 video_controler" ></video>
                         <div class="controleur">
                             <a class = 'play_button' data-target="#elevage_1" data-aos="fade-up" style="color: #000;">
                                 <span class="icon-button me-3">
@@ -1912,29 +1921,46 @@ qui ont en moyenne 35 KG au sevrage.
         
             const load = () => {
                 const navbar = window.location.hash
-            const section1 = document.querySelector('#elevage')
-            const section2 = document.querySelector('#agriculture')
-            const section3 = document.querySelector('#transformation')
-            const section4 = document.querySelector('#analyse')
-            const btnElevage = document.querySelectorAll('.btnElevage')
+                const section1 = document.querySelector('#elevage')
+                const section2 = document.querySelector('#agriculture')
+                const section3 = document.querySelector('#transformation')
+                const section4 = document.querySelector('#analyse')
+                const btnElevage = document.querySelectorAll('.btnElevage')
+                const btnAgriculture = queryAll('.btnAgriculture')
+                const btnEngrais = queryAll('.btnEngrais')
+                const btnAnalyse = queryAll('.btnAnalyse')
 
-
-
-            const btnAgriculture = queryAll('.btnAgriculture')
                 const section = queryAll('section')
                 const hash = window.location.hash
+
                 btnElevage.forEach(element => {
                 element.onclick = () => {
-                    window.location.hash = '#elevage'
-                    location.reload()
-                }
-            });
-            btnAgriculture.forEach(element => {
-                element.onclick = () => {
-                    window.location.hash = '#agriculture'
-                    location.reload()
-                }
-            });
+                        window.location.hash = '#elevage'
+                        location.reload()
+                    }
+                });
+
+                btnAgriculture.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#agriculture'
+                        location.reload()
+                    }
+                });
+
+                btnEngrais.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#engrais'
+                        location.reload()
+                    }
+                });
+
+                btnAnalyse.forEach(element => {
+                    element.onclick = () => {
+                        window.location.hash = '#analyse'
+                        location.reload()
+                    }
+                });
+
                 if(navbar.length === 0){
                     window.location.hash = '#elevage'
                     location.reload()
