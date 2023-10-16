@@ -66,6 +66,10 @@
 		#site_menu_mobile{
         display: none;
     }
+	.cta-button a::before {
+		content: '';
+		background-color: #dfe1da !important;
+	}
     @media (max-width : 990px) {
         #site_menu_mobile {
             display: block;
@@ -413,26 +417,16 @@
                             <a class="btnTransform" href="/services.html#transformation">Engrais</a>
                         </li>
                         <li>
-                            <a>Analyse</a>
+                            <a>Analyses</a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-children">
-                    <a class="chevron" data-extend="false">
+                    <a href="/rejoindre.html" class="chevron" data-extend="false">
                         <div>Nous rejoindre</div>
                         <svg class="flech" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 8.5l-4 4l-4-4"/></svg>
                     </a>
-                    <ul class="dropdown1" >
-                        <li>
-                            <a href="#">Demande de devis</a>
-                        </li>
-                        <li>
-                            <a href="#">Carrières</a>
-                        </li>
-                        <li>
-                            <a href="#">Partenariat</a>
-                        </li>
-                    </ul>
+                   
                 </li>
                 <li><a href="histoire.html">Histoire du projet</a></li>
             </ul>
@@ -464,39 +458,17 @@
 										<a href="/services.html#agriculture">Agriculture</a>
 									</li>
 									<li>
-										<a href="#">Engrais</a>
+										<a href="/services.html#engrais">Engrais</a>
 									</li>
 									<li>
-										<a href="">Analyse</a>
-										<!-- <ul>
-											<li>
-												<li class="has-children">
-													<a href="#">Présentation du laboratoire</a>
-													<ul class="dropdown">
-														<li><a href="#">Analyse des eaux</a></li>
-														<li><a href="#">Analyse des aliments</a></li>
-														<li><a href="#">Analyse des sols</a></li>
-														<li><a href="#">Analyse des engrais</a></li>
-													</ul>
-												</li>
-											</li>
-										</ul> -->
+										<a href="/services.html#analyse">Analyses</a>
+										
 									</li>
 								</ul>
 							</li>
-							<li class="has-children">
-								<a>Nous rejoindre</a>
-								<ul class="dropdown">
-									<li>
-										<a href="/rejoindre.html#devis">Demande de devis</a>
-									</li>
-									<li>
-										<a href="/rejoindre.html#carriere">Carrières</a>
-									</li>
-									<li>
-										<a href="/rejoindre.html#partenariat">Partenariat</a>
-									</li>
-								</ul>
+							<li >
+								<a href="/rejoindre.html">Nous rejoindre</a>
+								
 							</li>
 							<li><a href="histoire.html">Histoire du projet</a></li>
 						</ul> 
@@ -682,7 +654,7 @@
 			<div class="container">
 				<div class="box" data-aos="fade-up" data-aos-delay="400">
 					<div class="col-12 col-lg-7">
-						<div class="titre" style="font-size: 60px;">Konji-farm</div>
+						<div class="titre" style="font-size: 60px;">Konji farm</div>
 						<div class="heading" style="text-transform: none; font-size: 30px;">Une agriculture intégrée et intégrante</div>
 						<div class="desc" style="text-transform: none;">Un procédé dans lequel l'agriculture et l'élevage sont interdépendants, tout en y intégrant les populations.</div>
 					</div>
@@ -816,12 +788,16 @@
 				<div class="vil col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up">
-							<img src="/images/markus-spiske-71uUjIt3cIs-unsplash.jpg" alt="Image" class="img-fluid rellax" data-rellax-speed="-2" data-rellax-percentage="-1" data-rellax-mobile-speed="-5">
+							<!-- <img src="/images/assets/16-10-2023/img_accueil.jpg" alt="Image" class="img-fluid rellax" data-rellax-speed="-2" data-rellax-percentage="-1" data-rellax-mobile-speed="-5"> -->
 						</div>
-						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"
-							data-rellax-percentage="0.1.5">
-							<img src="/images/images-vine.JPG" alt="Image" class="img-fluid">
-						</div>
+						<!-- <div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100" -->
+							<!-- data-rellax-percentage="0.1.5"> -->
+							<!-- <img src="/images/images-vine.JPG" alt="Image" class="img-fluid"> -->
+							<div>
+								<img src="/images/assets/16-10-2023/img_accueil.jpg" alt="">
+							</div>
+							
+						<!-- </div> -->
 					</div>
 
 				</div>
@@ -852,17 +828,17 @@
 				<div class="col-12 col-lg-5 cadre" data-aos="fade-up" data-aos-delay="100">
 					<div>
 						<h1 class="text-white">KONJI FARM 
-							<span class="text-white-casse" style="font-family: Inter; font-weight: 400; font-size: 28px;">s'engage à améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit.</span> 
+							<span class="text-white-casse" style="font-family: Inter; font-weight: 400; font-size: calc(10px + 1.5vmin);">s'engage à améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit.</span> 
 						</h1>
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 cadre">
 					<div><h1 class="text-white" data-aos="fade-up" data-aos-delay="200">
 						KONJI FARM 
-						<span class="text-white-casse" style="font-family: Inter; font-weight: 400; font-size: 28px;">
-							à pour règles générales le respect de l’environnement, 
-						Développement inclusif et 
-						Transmission du savoir.
+						<span class="text-white-casse" style="font-family: Inter; font-weight: 400; font-size: calc(10px + 1.5vmin)">
+							a pour règles générales le respect de l’environnement, 
+							le éveloppement inclusif et 
+							la transmission du savoir.
 						</span>
 					</h1></div>
 				</div>
@@ -944,7 +920,7 @@
 			<div class="cible-fantome">
 				<div class="heading-content" data-aos="fade-up">
 					<h2 class="heading mb-3" style="color: #ffffff;">Nos Activités</h2>
-					<p class="mb-3" style="color: white;" style="text-transform: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto eius repellat nulla beatae!</p>
+					<p class="mb-3" style="color: white;" style="text-transform: none;">Nous faisons de l'agriculture, l'élevage, la production d'engrais et l'analyse des sols, des plantes, des eaux et de l'engrais.</p>
 				</div>
 			</div>
 			<div class="Image_lien">
@@ -1007,11 +983,11 @@
 			</div>
 			<div class=" col-12">
 				<div class="widget">
-					<h3 style="color: #1B221C; text-align: start; text-transform: none;">Contactez-nous</h3>
+					<h3 style="color: #fff; text-align: start; text-transform: none;">Contactez-nous</h3>
 					<address style="text-transform: none; ">Nous sommes situés à Yaoundé au Cameroun, en face de l'ancien FEICOM</address>
 					<ul class="list-unstyled links mb-4">
-						<li><a href="" style="color: #1B221C;">+237 697 393 396</a></li>
-						<li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br>
+						<li><a href="" style="color: #1B221C;">+237 671 095 598</a></li>
+						<!-- <li><a href="" style="color: #1B221C;">+1(514) 557-4237</a></li><br> -->
 						<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
 					</ul>
 				</div> <!-- /.widget -->
@@ -1034,82 +1010,7 @@
 		</div>
 	</div> -->
 
-	<div class="site-footer" style="background-color: #4D594A;">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3  id="ancre">A propos
-							<span  style="display: block; font-size: 24px;">Konji Farm</span>
-							<span class="text-primary"></span> </h3>
-						<p style="color: #1B221C; text-transform: none;">
-							KONJIFARM s'engage à améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production 
-							respectueux de l’écosystème dans lequel elle s’inscrit.
-						</p>
-					</div> <!-- /.widget -->
-					<div class="widget">
-						
-						<ul class="list-unstyled social">
-							<li><a href="#" ><span class="icon-instagram" ></span></a></li>
-							<li><a href="#" ><span class="icon-twitter" ></span></a></li>
-							<li><a href="#" ><span class="icon-facebook" ></span></a></li>
-							<li><a href="#" ><span class="icon-linkedin" ></span></a></li>
-							<!-- <li><a href="#" ><span class="icon-pinterest"></span></a></li>
-							<li><a href="#" ><span class="icon-dribbble"></span></a></li> -->
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2 ml-auto">
-					<div class="widget">
-						<h3 >Liens</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="#" >Accueil</a></li>
-							<li><a href="#" >Elevage</a></li>
-							<li><a href="#" >Agriculture</a></li>
-							<li><a href="#" >Analyse</a></li>
-							<li><a href="#" >Engrais</a></li>
-							<li><a href="#" >Histoire du projet</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-lg-2">
-					<div class="widget">
-						<h3>Nous rejoindre</h3>
-						<ul class="list-unstyled float-left links">
-							<li style="text-transform: none;"><a href="#" >Demande de devis</a></li>
-							<li><a href="#" >Carrières</a></li>
-							<li><a href="#" >Partenariat</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-
-				<div class="col-lg-3">
-					<div class="widget">
-						<h3 >Contact</h3>
-						<address style="text-transform: none; color: black;">Nous sommes situés à Yaoundé au Cameroun, en face de l'ancien FEICOM</address>
-						<ul class="list-unstyled links mb-4">
-							<li><a href="" >+237 697 393 396</a></li>
-								<li><a href="" >+1(514) 557-4237</a></li><br>
-								<li><a href="mailto:contact@konji-farm.com" style="color: #1B221C; text-transform: none;">contact@konji-farm.com</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-			</div> <!-- /.row -->
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="mb-0" style="color: black; text-transform: none;">Tous droits reservés &copy;
-						<script >document.write(new Date().getFullYear());</script>. KONJI FARM. 
-					</p>
-				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.site-footer -->
-		</div>
+	<footer-side></footer-side>
 		<!-- Preloader -->
 		<div id="overlayer"></div>
 		<div class="loader">
