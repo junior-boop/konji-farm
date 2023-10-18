@@ -386,6 +386,38 @@
 		padding: 24px;
 		background-color: #4D594A;
 	}
+
+	.video_banniere {
+		width: 100%;
+		height: 95vh;
+		background-color: red;
+		position: relative;
+	}
+	.video_banniere .mask {
+		position: absolute;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		background-color: #00000042;
+
+	}
+	.video_banniere .video {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+
+	}
+	.video_banniere .video video {
+
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+	}
+
+
 	</style>
 </head>
 
@@ -496,142 +528,32 @@
 <header id="home" class="welcome-hero desktop">
 
 	<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-		<!--/.carousel-indicator -->
-		 <ol class="carousel-indicators" style="width: 100px; margin: 0 auto 12px;">
-			<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
-			<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
-			<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
-			<li data-target="#header-carousel" data-slide-to="3"><span class="small-circle"></span></li>
-			<li data-target="#header-carousel" data-slide-to="4"><span class="small-circle"></span></li>
-		</ol><!-- /ol-->
-		<!--/.carousel-indicator -->
+	
 
 		<div class="header-text">
 			<div class="container">
 				<div class="box" data-aos="fade-up" data-aos-delay="400">
-					<div class="col-12 col-lg-7">
+					<div class="col-12 col-lg-8">
 						<div class="titre" style="font-size: 60px;">Konji farm</div>
-						<div class="heading" style="text-transform: none; font-size: 30px;">Une agriculture intégrée et intégrante</div>
-						<div class="desc" style="text-transform: none;">Un procédé dans lequel l'agriculture et l'élevage sont interdépendants, tout en y intégrant les populations.</div>
+						<div class="heading " style="text-transform: none; font-size: 30px; width: 500px;">" Une agriculture intégrée et intégrante ! "</div>
+						<!-- <div class="desc" style="text-transform: none;">Un procédé dans lequel l'agriculture et l'élevage sont interdépendants, tout en y intégrant les populations.</div> -->
 					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="video_banniere">
+				<div class="mask"></div>
+				<div class="video">
+					<video src="/images/assets/18-10-2023/video-banniere.mp4" autoplay loop muted> video non pris en charge</video>
 				</div>
 			</div>
 		</div>
 
 		<!--/.carousel-inner -->
-		<div class="carousel-inner" role="listbox">
-			<!-- .item -->
-			<div class="item active">
-				<div class="single-slide-item slide1" style="background-image: url(/images/assets/Bannière\ 1e.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.350);">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												
-												
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div>
-				</div><!-- /.single-slide-item-->
 
-			</div><!-- /.item .active-->
-
-			<div class="item">
-				<div class="single-slide-item slide2" style="background-image: url(/images/assets/Bannière\ 1.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.350);">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div>
-				</div><!-- /.single-slide-item-->
-
-			</div><!-- /.item .active-->
-
-			<div class="item">
-				<div class="single-slide-item slide3" style="background-image: url(/images/assets/Bannière\ 2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.350);">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div>
-				</div><!-- /.single-slide-item-->
-				
-			</div><!-- /.item .active-->
-
-			<div class="item">
-				<div class="single-slide-item slide4" style="background-image: url(/images/assets/Bannière\ 4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.350);">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div>
-				</div><!-- /.single-slide-item-->
-				
-			</div><!-- /.item .active-->
-
-			<div class="item">
-				<div class="single-slide-item slide5" style="background-image: url(/images/assets/Bannière\ 5.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-					<div style="background-color: rgba(0, 0, 0, 0.350);">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div>
-				</div><!-- /.single-slide-item-->
-				
-			</div><!-- /.item .active-->
-		</div><!-- /.carousel-inner-->
+		
+		<!-- /.carousel-inner-->
 
 	</div><!--/#header-carousel-->
 
@@ -656,7 +578,7 @@
 					<div class="col-12 col-lg-7">
 						<div class="titre" style="font-size: 60px;">Konji farm</div>
 						<div class="heading" style="text-transform: none; font-size: 30px;">Une agriculture intégrée et intégrante</div>
-						<div class="desc" style="text-transform: none;">Un procédé dans lequel l'agriculture et l'élevage sont interdépendants, tout en y intégrant les populations.</div>
+						<!-- <div class="desc" style="text-transform: none;">Un procédé dans lequel l'agriculture et l'élevage sont interdépendants, tout en y intégrant les populations.</div> -->
 					</div>
 				</div>
 			</div>
@@ -784,7 +706,7 @@
 <!-- fin hero section teste -->
 	<div class="section section-2">
 		<div class="container">
-			<div class="row align-items-center justify-content-between py-5 flex-column-reverse flex-lg-row">
+			<div class="row align-items-start justify-content-between py-5 flex-column-reverse flex-lg-row">
 				<div class="vil col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up">
@@ -801,19 +723,24 @@
 					</div>
 
 				</div>
-				<div class="col-lg-4 order-lg-1 mt-5 mt-lg-0">
+				<div class="col-lg-6 order-lg-1 mt-5 mt-lg-0">
 
 					<div class="py-5">
-						<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">Qui sommes nous ?</h2>
-
-						<p data-aos="fade-up" data-aos-delay="200" style="text-transform: none;">KONJI FARM est une société coopérative simplifiée qui vise à opérer dans le respect des principes fondamentaux de la permaculture. 
-							En d’autres termes, nous cherchons à promouvoir une éthique et une méthode globales qui poussent à la conception de systèmes intégrés dans une stratégie de développement durable, 
-							où l’activité humaine tient compte des écosystèmes naturels et s’exerce en harmonie et en interconnexion avec eux, dans un souci constant d’efficacité, de soutenabilité et de résilience.</p>
+						<h2 class="heading mb-5 mt-2" data-aos="fade-up" data-aos-delay="100" style="text-transform: none;">Qui sommes nous ?</h2>
+						<br>
+						<p data-aos="fade-up" data-aos-delay="200" style="text-transform: none;">
+					KONJI FARM est une société coopérative simplifiée qui a pour système de production
+					<b ><i style="text-transform: uppercase;">l’aquaponie.</i></b> <i>"L’aquaponie est la fusion de 2 techniques, l’aquaculture et l’hydroponie, qui permet de faire vivre ensemble en parfaite harmonie des plantes et des animaux aquatiques dans un système fermé."</i><br>
+					 Le groupe vise à opérer dans le respect des principes fondamentaux de la permaculture.
+					En d’autres termes, nous cherchons à promouvoir une éthique et une méthode globales qui
+					poussent à la conception de systèmes intégrés dans une stratégie de développement durable, où
+					l’activité humaine tient compte des écosystèmes naturels et s’exerce en harmonie et en
+					interconnexion avec eux. Tout ceci, dans un souci constant d’efficacité, de soutenabilité et de
+					résilience</p>
 
 						<p data-aos="fade-up" data-aos-delay="300"></p>
 
-						<!-- <p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">Read
-								more</a></p> -->
+						
 					</div>
 				</div>
 
@@ -822,7 +749,34 @@
 		</div>
 		
 	</div>
-	<div class="value_mission px-4">
+	<div class="value_mission px-4 d-flex justify-content-center">
+		<div class="container row justify-content-center gap-5 align-items-center" style="padding: 64px 0;" >
+			<div class="col-12 col-lg-5">
+				<div style="width: 100%; aspect-ratio: 1;">
+					<img src="/images/assets/18-10-2023/principe.jpg" alt="" style="width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover;">
+				</div>
+			</div>
+			<div class="col-12 col-lg-5">
+				<div class="principe" style="margin-bottom: 65px;">
+					<div style="font-size: calc(36px + 1vmin); font-weight: 900; opacity: .31; text-transform: uppercase; font-family: Minion Pro ;">
+						Notre Mission
+					</div>
+					<div style="font-size: calc(16px + 1vmin); line-height: 110%; padding-left: 24px ;position: relative; top: -5px; font-weight: 600;">
+						KONJI FARM s'engage à améliorer la qualité de vie des populations en proposant des produits naturels, à travers des procédés de production respectueux de l’écosystème dans lequel elle s’inscrit.
+					</div>
+				</div>
+				<div class="principe">
+					<div style="font-size: calc(36px + 1vmin); font-weight: 900; opacity: .31; text-transform: uppercase; font-family: Minion Pro;">
+						Nos valeurs
+					</div>
+					<div style="font-size: calc(16px + 1vmin); line-height: 110%; padding-left: 24px ;position: relative; top: -5px; font-weight: 600;">
+						KONJI FARM a pour règles générales le respect de l’environnement, le développement inclusif et la transmission du savoir.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="value_mission px-4">
 		<div class="container">
 			<div class="row justify-content-center gap-4">
 				<div class="col-12 col-lg-5 cadre" data-aos="fade-up" data-aos-delay="100">
@@ -836,15 +790,15 @@
 					<div><h1 class="text-white" data-aos="fade-up" data-aos-delay="200">
 						KONJI FARM 
 						<span class="text-white-casse" style="font-family: Inter; font-weight: 400; font-size: calc(10px + 1.5vmin)">
-							a pour règles générales le respect de l’environnement, 
-							le éveloppement inclusif et 
-							la transmission du savoir.
+						a pour règles générales le respect de l’environnement, 
+						le développement inclusif et 
+						la transmission du savoir.
 						</span>
 					</h1></div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="section service-section-1 desktop" style="background-color: #4D594A;">
 		
 		<div class="container d-flex justify-content-center">
@@ -854,7 +808,7 @@
 					<div class="cible-fantome">
 						<div class="heading-content" data-aos="fade-up">
 							<h2 class="heading mb-3" style="color: #ffffff;">Nos Activités</h2>
-							<p class="mb-3" style="color: white;" style="text-transform: none;">Nous faisons de l'agriculture, l'élevage, la production d'engrais et l'analyse des sols, des plantes, des eaux et de l'engrais.</p>
+							<p class="mb-3" style="color: white;" style="text-transform: none; line-height: 10px;">Nous faisons de l'agriculture, l'élevage, la production d'engrais et l'analyse des sols, des plantes, des eaux et de l'engrais.</p>
 						</div>
 					</div>
 					<div class="col-12 col-lg-12 mb-4 mb-lg-4 px-0" data-aos="fade-up" data-aos-delay="100">
@@ -875,7 +829,7 @@
 							<img src="/images/assets/analyse.jpg" alt="" style="object-position: bottom;">
 							<div class="desc">
 								<div>
-									<span style="color: #000;">Analyse</span>
+									<span style="color: #000;">Analyses</span>
 									<div class="hiden" style="text-transform: none; color:#000">
 										Cliquez pour avoir plus d'informations
 									</div>
@@ -964,7 +918,7 @@
 						<img src="/images/assets/analyse.jpg" alt="">
 						<div class="desc">
 							<div class="d-flex flex-column align-items-start">
-								<span class="d-block text-left titre">Analyse</span>
+								<span class="d-block text-left titre">Analyses</span>
 								<div class="hiden d-block text-left col-10" style="text-transform: none;">
 									Cliquez pour avoir plus d'informations
 								</div>
