@@ -233,10 +233,11 @@
 
 		.gallerie-content {
 			width : 100%;
+			height: 450px;
 			overflow-x: auto;
 			overflow-y: hidden;
 			
-    		scroll-snap-type: mandatory;
+    		/* scroll-snap-type: mandatory; */
     		scroll-behavior: smooth;
 		}
 
@@ -247,11 +248,14 @@
 			width: max-content;
 		}
 
+		
 		.gallerie-content::-webkit-scrollbar {
-    		height: 12px;
+    		height: 14px;
+			background-color: white;
 		}
-		.gallerie-content::-webkit-scrollbar-corner {
-    		/* display: none; */
+		.gallerie-content::-webkit-scrollbar-thumb {
+    		background-color: #4e6352;
+			border-radius: 12px;
 		}
 
 		.product-item{
@@ -283,7 +287,7 @@
 		
 		#quelques-images{
 			background-color: white;
-			padding: 62px 0;
+			padding: 62px 0 10px;
 		}
 
 		#quelques-images h2{
@@ -350,6 +354,122 @@
             justify-content: space-between;
         }
     }
+	.video-container {
+        /* border : 1px solid silver; */
+        position: relative;
+    }
+    .video-container video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .video-container .controleur{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 12;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .video-container .controleur .icon-button{
+       width: 56px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .video-container .controleur .icon-button::before{
+        content: '';
+        width: 56px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        transition: all ease .2s;
+        transform: scale(1);
+    }
+    .video-container .controleur .icon-button:hover::before{
+        content: '';
+        transform: scale(1.2);
+    }
+
+    .video-container .controleur .play_btn {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .video_controler {
+        width: 400px;
+        aspect-ratio: 1;
+    }
+    @media (max-width : 990px) {
+        .video_controler {
+            width: 100%;
+            aspect-ratio: 1;
+        }
+
+        .heading_mobile {
+            font-size: 52px !important;
+        }
+    }
+    .stats {
+        height: 235.5px;
+    }
+
+    .play_button {
+        opacity: 1;
+        visibility: visible;
+        transition: all ease .3s;
+    }
+    .text-vert-principal {
+        color: #4D594A;
+    }
+    .text-gris-principal {
+        color :#DFE1DA ;
+    }
+    .bg-vert-principal {
+        background-color: #4D594A;
+    }
+    .bg-gris-principal {
+        background-color: #DFE1DA;
+    }
+
+    a.btn {
+        font-size: 16px;
+        position: relative;
+        color: #1B221C;
+        font-family: "Brygada 1918" ;
+        text-transform: none;
+        font-weight: 700;
+
+    } 
+    a.btn::before {
+        content: '';
+        display: inline-block;
+        background-color: #DFE1DA;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        z-index: -1;
+        transform: scale(1);
+        transition: all ease .3s;
+    } 
+    a.btn:hover {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #4D594A;
+    } 
 
 	.newsletter .container h2 {
 		font-size: 58px;
@@ -476,7 +596,7 @@
 
 <div class="container" >
 	<div class="banner">
-		<img src="images/assets/IMG_20231012_234336_130.png" alt="">
+		<img src="images/assets/20-10-2023/IMG_20231020_113900_814.jpg" alt="">
 	</div>
 		
 	<div class="contenu1">
@@ -538,46 +658,36 @@
 		<div class="product-carousel">
 			
 			<div class="product-item">
+				<img src="/images/assets/20-10-2023/IMG_20231020_113906_010.jpg" alt="">
+				
+			</div>
+			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist1.jpg" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist2.jpg" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist3.jpg" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist4.JPG" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="images/assets/16-10-2023/hist5.JPG" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist6.jpg" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<div class="product-item">
 				<img src="/images/assets/16-10-2023/hist7.jpg" alt="">
-				<div class="product-details">
-					<h4>Description du produit</h4>
-				</div>
+				
 			</div>
 			<!-- <div class="product-item">
 				<img src="images/assets/16-10-2023/hist3.jpg" alt="">
@@ -612,7 +722,18 @@
 			</div>
 		</div>
 		<div class="col-12 col-md-12 col-lg-6">
-			<img src="/images/assets/diapos_mobile.png" alt="">
+			<!-- <img src="/images/assets/diapos_mobile.png" alt=""> -->
+			<div class="video-container d-lg-flex align-items-center justify-content-center">
+				<video src="/images/assets/20-10-2023/VID-20231020-WA0000.mp4" id="elevage_1" class="play-button align-items-center d-flex glightbox3 video_controler" ></video>
+				<div class="controleur">
+					<a class = 'play_button' data-target="#elevage_1" data-aos="fade-up" style="color: #000;">
+						<span class="icon-button me-3">
+							<span class="icon-play" style="transform: translateX(20%) translateY(5%);"></span>
+						</span>
+						<!-- <span class="caption" style="color: #fff;">Watch Video</span> -->
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -703,6 +824,32 @@
 			}
 
 			requestAnimationFrame(read)
+
+
+			const play_button = queryAll('.play_button')
+            play_button.forEach(element => {
+                element.onclick = () => {
+                    const id = element.dataset.target
+                    const video = query(id)
+                    console.dir(video)
+                    if(video.paused){
+                        console.log("paused : true")
+                        
+                        video.play()
+                    }  
+                    element.style.opacity = 0
+                    setTimeout(() => {
+                        element.style.visibility = 'hidden'
+                    }, 300)
+                    
+                    video.onpause = () => {
+                        element.style.visibility = 'visible'
+                        setTimeout(() => {
+                            element.style.opacity = 1
+                        }, 300)
+                    }
+                }
+            })
 </script>
 </body>
 <!-- <script src="./js/custom.js"></script> -->
