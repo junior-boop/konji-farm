@@ -115,6 +115,50 @@
         font-weight: 700;
         line-height: normal;
     }
+    .section-3 .element.plus {
+        color: #4D594A;
+        background-color:#DFE1DA;
+        border-radius: 16px;
+        padding: 0;
+        font-family: 'Brygada 1918';
+        height: 100%;
+    }
+    .section-3 .element.plus img{
+       border-radius: 16px 16px 0 0;
+       width: 100%;
+       height: 170px;
+       object-fit: cover;
+    }
+    .section-3 .element.plus .haut{
+        font-size: 24px;
+        padding: 24px;
+        font-weight: 700;
+    }
+    .section-3 .element.plus .haut .linkPdf{
+        display: flex;
+        align-items: flex-start;
+        color: #DFE1DA;
+        background-color: #1B221C;
+        border-radius: 9px;
+        padding:12px;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .section-3 .element.plus .haut .linkPdf > div{
+       text-wrap: nowrap;
+    }
+    .section-3 .element.plus .chiffre{
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 80%;
+        color: #1B221C;
+        margin-bottom: 12px;
+    }
+    .section-3 .element.plus .bas{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
     @media (min-width : 1080px) {
         .grand_titre > div{
             display: none;
@@ -484,7 +528,7 @@
         <div class="container d-flex d-lg-block align-items-center" style = " height: 400px;">
             <div class="row align-items-end justify-content-start">
                 <div class="col-lg-5">
-                    <h1 class="heading heading_mobile" data-aos="fade-up" style="font-size:calc(30px + 8vmin) ;">Elevage</h1>
+                    <h1 class="heading heading_mobile" data-aos="fade-up" style="font-size:calc(30px + 8vmin) ;">Élevage</h1>
                     
                 </div>
             </div>
@@ -538,15 +582,15 @@
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0 stats" data-aos="fade-up" data-aos-delay="100">
                         <div class="element" style="background-color: #4e6352; color: white;">
                             <div class="haut">Nous avons</div>
-                            <div class="chiffre" style="color: white;">10</div>
-                            <div class="bas"> bacs à poissons</div>
+                            <div class="chiffre" style="color: white;">50m3</div>
+                            <div class="bas">D'élevage hors sol</div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0 stats" data-aos="fade-up" data-aos-delay="200">
                         <div class="element" style="background-color: #4e6352; color: white;">
-                            <div class="haut">Plus de</div>
+                            <div class="haut">Poids moyen de</div>
                             <div class="chiffre" style="color: white;">400G</div>
-                            <div class="bas"> par poids d'un poisson </div>
+                            <div class="bas"></div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0 stats" data-aos="fade-up" data-aos-delay="300">
@@ -584,7 +628,7 @@
             <div class="container d-flex justify-content-center">
                 <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
                     <div>
-                        Faire un Dévis
+                        Faire un devis
                     </div>
                 </a>
             </div>
@@ -594,22 +638,35 @@
     <div class="section section-3" style="background-color: #DFE1DA; padding: 24px 0;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-5">
-                    <div class="grand_titre">
-                        <h2 class="heading mb-3" style="color: #1B221C;">Alevins</h2>
+                <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-12">
+                        <div class="grand_titre">
+                            <h2 class="heading mb-3" style="color: #1B221C;">Alevins</h2>
+                        </div>
+                        <p class="step" style="color: #1B221C; text-transform: none;">
+                            L’écloserie a une capacité de 30 000 alevins par cycle. Ils sont de très
+                            bonne souche de l’espèce « Clarias Girapinus », rustique avec des performances de croissance
+                            inégalables.
+                        </p>
                     </div>
-                    <p class="step" style="color: #1B221C; text-transform: none;">
-                        L’écloserie a une capacité de 30 000 alevins par cycle. Ils sont de très
-                        bonne souche de l’espèce « Clarias Girapinus », rustique avec des performances de croissance
-                        inégalables.
-                    </p>
+                        <div class="col-12 col-lg-8 mb-4 mb-lg-0 stats" data-aos="fade-up" data-aos-delay="300">
+                            <div class="element" style="background-color: #4e6352; color: white;">
+                            <div class="haut">Plus de </div>
+                                <div class="chiffre" style="color: white;">30 000 </div>
+                                <div class="bas"> Alevins par Cycle </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="col-12 col-lg-5">
-                    <div class="col-12 col-lg-8 mb-4 mb-lg-0 stats" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element" style="background-color: #4e6352; color: white;">
-                        <div class="haut">Plus de </div>
-                            <div class="chiffre" style="color: white;">30 000 </div>
-                            <div class="bas"> Alevins par Cycle </div>
+                <div class="col-lg-4 text-md-end" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-container d-lg-flex align-items-center justify-content-center">
+                        <video src="/images/assets/01-11-2023/4_5915688246121075011.MOV" id="elevage_1" class="play-button align-items-center d-flex glightbox3 video_controler" ></video>
+                        <div class="controleur">
+                            <a class = 'play_button' data-target="#elevage_1" data-aos="fade-up" style="color: #000;">
+                                <span class="icon-button me-3">
+                                    <span class="icon-play" style="transform: translateX(20%) translateY(5%);"></span>
+                                </span>
+                                <!-- <span class="caption" style="color: #fff;">Watch Video</span> -->
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -782,7 +839,6 @@
     
     </div> -->
 </section>
- 
 
 <section id="agriculture">
     <div class="hero overlay">
@@ -822,13 +878,13 @@
             <div class="row align-items-center justify-content-between " style="margin-bottom: 72px ;">
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="grand_titre">
-                        <h2 class="heading mb-3" style="color: #1B221C;">TOMATE RONDE</h2>
+                        <h2 class="heading mb-3" style="color: #1B221C;">TOMATE coeur de Boeuf</h2>
                     </div>
                     
                     <p class="step" style="color: #1B221C; text-transform: none;">
                         Lisse, un peu pointue (en forme de cœur), elle a une chair juteuse, riche en sucre
                         et est idéale pour les sauces, à farcir et pour les jus. Elle est cultivée sous serre à l’abri du vent, et
-                        arroser au pied par un engrais biologique d’origine animale riche en azote.
+                        arroser au pied par un engrais biologique riche en potassium.
                     </p>
                 </div>
                 <div class="col-lg-4 text-md-end" data-aos="fade-up" data-aos-delay="100">
@@ -850,7 +906,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <!-- <div class="d-flex align-items-center justify-content-center">
                 <div class="col-lg-10 row" style="margin: auto;" >
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
                         <div class="element" style="background-color: #4e6352; color: white;">
@@ -874,7 +930,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div>
                 <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
                     <h1 class="my-3" style="color: #1B221C; font-weight: 600;">Quelques Images</h1>
@@ -901,7 +957,7 @@
             <div class="container d-flex justify-content-center">
                 <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
                     <div>
-                        Faire un Dévis
+                        Demander un devis
                     </div>
                 </a>
             </div>
@@ -938,7 +994,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <!-- <div class="d-flex align-items-center justify-content-center">
                 <div class="col-lg-10 row" style="margin: auto;" >
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
                         <div class="element">
@@ -962,7 +1018,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div>
                 <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
                     <h1 class="my-3" style="color: white; font-weight: 600;">Quelques Images</h1>
@@ -989,7 +1045,7 @@
             <div class="container d-flex justify-content-center">
                 <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
                     <div>
-                        Faire un Dévis
+                        Demander un devis
                     </div>
                 </a>
             </div>
@@ -1028,7 +1084,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <!-- <div class="d-flex align-items-center justify-content-center">
                 <div class="col-lg-10 row" style="margin: auto;" >
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
                         <div class="element" style="background-color: #4e6352; color: white;">
@@ -1052,7 +1108,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div>
                 <div class="col-10 mx-auto " style="margin-top: 62px;" data-aos="fade-up" data-aos-delay="100">
                     <h1 class="my-3" style="color: #1B221C; font-weight: 600;">Quelques Images</h1>
@@ -1079,7 +1135,7 @@
             <div class="container d-flex justify-content-center">
                 <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
                     <div>
-                        Faire un Dévis
+                        Demander un devis
                     </div>
                 </a>
             </div>
@@ -1182,10 +1238,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-12 mt-5 mt-lg-0" style="text-transform: none; font-size: 24px; color: white;" data-aos="fade-up" data-aos-delay="100">
                     <div style="font-weight: 600;">KONJI GROW,</div> 
-                     est la marque d’engrais bio d’origine animale mise sur pied par KONJI FARM. Il est issu
-                    des déjections de poissons et de porc, ce qui fait de lui un puissant allié pour les agriculteurs qui sont
-                    soucieux de la santé de leurs plantes et des consommateurs. Il s’agit d’un engrais de type racinaire
-                    est utilisé à la racine de la plante pour une meilleure absorption des nutriments par celle-ci.
+                    est un engrais liquide racinaire 100% naturel, issu du processus de biométhanisation de matière purement organique. Il se distingue par sa teneure riche en potassium, qui favorise une floraison et une fructification abondante. Il ne contient aucun additifs chimiques dans sa formulation.
                 </div>
             </div>
         </div>
@@ -1256,6 +1309,15 @@
                     </div>
                 </div>
             </div> -->
+            <div class="py-5">
+            <div class="container d-flex justify-content-center">
+                <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
+                    <div>
+                        Demander un devis
+                    </div>
+                </a>
+            </div>
+        </div>
         </div>
     
     </div>
@@ -1315,26 +1377,53 @@
             </div>
            
             <div class="d-flex align-items-center justify-content-center">
-                
                 <div class="col-lg-12 row" style="margin: auto;" >
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="element" style="background-color: #4D594A;">
-                            <div class="haut" style="color: #DFE1DA;">ANALYSE COMPLETE DES EAUX POUR LE
-                                GACHAGE DU BETON</div>
-                            <!-- <div class="chiffre">23</div>
-                            <div class="bas"> bacs à poissons <br> dans 4 villes au Cameroun</div> -->
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <div class="element plus" style="background-color: #4D594A;">
+                            <img src="/images/assets/01-11-2023/eaux.jpg" alt="">
+                            <div class="haut">
+                                <div style="color: #DFE1DA;">ANALYSE DE L'EAUX</div>
+                                <a class = 'linkPdf' href="/images/assets/01-11-2023/ANALYSE COMPLÈTE DES ZAUX DE GACHAGE DE BÉTON.pdf">
+                                    <svg style="width: 15%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M30 18v-2h-6v10h2v-4h3v-2h-3v-2h4zm-11 8h-4V16h4a3.003 3.003 0 0 1 3 3v4a3.003 3.003 0 0 1-3 3zm-2-2h2a1.001 1.001 0 0 0 1-1v-4a1.001 1.001 0 0 0-1-1h-2zm-6-8H6v10h2v-3h3a2.003 2.003 0 0 0 2-2v-3a2.002 2.002 0 0 0-2-2zm-3 5v-3h3l.001 3z"/><path fill="currentColor" d="M22 14v-4a.91.91 0 0 0-.3-.7l-7-7A.909.909 0 0 0 14 2H4a2.006 2.006 0 0 0-2 2v24a2 2 0 0 0 2 2h16v-2H4V4h8v6a2.006 2.006 0 0 0 2 2h6v2Zm-8-4V4.4l5.6 5.6Z"/></svg>
+                                    <div style="width: 75%;">
+                                        GACHAGE DE BÉTON
+                                    </div>
+                                </a>
+                                <a class = 'linkPdf' href="/images/assets/01-11-2023/ANALYSE COMPLÈTE DES EAUX USÉES .pdf">
+                                    <svg style="width: 15%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M30 18v-2h-6v10h2v-4h3v-2h-3v-2h4zm-11 8h-4V16h4a3.003 3.003 0 0 1 3 3v4a3.003 3.003 0 0 1-3 3zm-2-2h2a1.001 1.001 0 0 0 1-1v-4a1.001 1.001 0 0 0-1-1h-2zm-6-8H6v10h2v-3h3a2.003 2.003 0 0 0 2-2v-3a2.002 2.002 0 0 0-2-2zm-3 5v-3h3l.001 3z"/><path fill="currentColor" d="M22 14v-4a.91.91 0 0 0-.3-.7l-7-7A.909.909 0 0 0 14 2H4a2.006 2.006 0 0 0-2 2v24a2 2 0 0 0 2 2h16v-2H4V4h8v6a2.006 2.006 0 0 0 2 2h6v2Zm-8-4V4.4l5.6 5.6Z"/></svg>
+                                    <div style="width: 75%;">
+                                        EAUX USÉES 
+                                    </div>
+                                </a>
+                                <a class = 'linkPdf' href="/images/assets/01-11-2023/ANALYSE COMPLÈTE DES EAUX DE DIALYSE.pdf">
+                                    <svg style="width: 15%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M30 18v-2h-6v10h2v-4h3v-2h-3v-2h4zm-11 8h-4V16h4a3.003 3.003 0 0 1 3 3v4a3.003 3.003 0 0 1-3 3zm-2-2h2a1.001 1.001 0 0 0 1-1v-4a1.001 1.001 0 0 0-1-1h-2zm-6-8H6v10h2v-3h3a2.003 2.003 0 0 0 2-2v-3a2.002 2.002 0 0 0-2-2zm-3 5v-3h3l.001 3z"/><path fill="currentColor" d="M22 14v-4a.91.91 0 0 0-.3-.7l-7-7A.909.909 0 0 0 14 2H4a2.006 2.006 0 0 0-2 2v24a2 2 0 0 0 2 2h16v-2H4V4h8v6a2.006 2.006 0 0 0 2 2h6v2Zm-8-4V4.4l5.6 5.6Z"/></svg>
+                                    <div style="width: 75%;">
+                                        EAUX DE DIALYSE
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="element" style="background-color: #4D594A;">
-                            <div class="haut" style="color: #DFE1DA;">ANALYSE COMPLETE DES EAUX DE DIALYSE</div>
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                        <div class="element plus" style="background-color: #4D594A;">
+                            <img src="/images/assets/01-11-2023/sols.jpg" alt="">
+                            <div class="haut" style="color: #DFE1DA;">ANALYSE DU SOL</div>
                             <!-- <div class="chiffre">3000</div>
                             <div class="bas"> Poissons de 2 espèces <br> élevés l'année dernière </div> -->
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="element" style="background-color: #4D594A;">
-                            <div class="haut" style="color: #DFE1DA;">ANALYSE DES EAUX USEES</div>
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <div class="element plus" style="background-color: #4D594A;">
+                            <img src="/images/assets/01-11-2023/aliment.jpg" alt="">
+                            <div class="haut" style="color: #DFE1DA;">ANALYSE DES ALIMENTS</div>
+                            <!-- <div class="chiffre">23</div>
+                            <div class="bas"> bacs à poissons <br> dans 4 villes au Cameroun</div> -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <div class="element plus" style="background-color: #4D594A;">
+                            <img src="/images/assets/01-11-2023/engrais.jpg" alt="">
+                            <div class="haut" style="color: #DFE1DA;">ANALYSE DES ENGRAIS</div>
                             <!-- <div class="chiffre">23</div>
                             <div class="bas"> bacs à poissons <br> dans 4 villes au Cameroun</div> -->
                         </div>
@@ -1346,7 +1435,7 @@
                 <div class="container d-flex justify-content-center">
                     <a href="/rejoindre.html#devis" class="col-12 col-lg-4  text-vert-principal btn">
                         <div>
-                            Faire un Dévis
+                            Demander un devis
                         </div>
                     </a>
                 </div>
@@ -1523,168 +1612,170 @@
 </section>
 
 
-    <news-letter></news-letter>
-    <footer-side></footer-side>
+<news-letter></news-letter>
+<footer-side></footer-side>
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/aos.js"></script>
-		<!-- <script src="js/navbar.js"></script> -->
-		<script src="js/counter.js"></script>
-		<script src="js/rellax.js"></script>
-		<script src="js/flatpickr.js"></script>
-		<script src="js/glightbox.min.js"></script>
-		<script src="js/custom.js"></script>
-		<!-- <script src="js/Nouveau dossier/bootsnav.js"></script> -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/aos.js"></script>
+<!-- <script src="js/navbar.js"></script> -->
+<script src="js/counter.js"></script>
+<script src="js/rellax.js"></script>
+<script src="js/flatpickr.js"></script>
+<script src="js/glightbox.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- <script src="js/Nouveau dossier/bootsnav.js"></script> -->
 
-		<script src="js/Nouveau dossier/jquery.js"></script>
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="js/Nouveau dossier/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="js/Nouveau dossier/bootsnav.js"></script>
-		<!--owl.carousel.js-->
-        <script src="js/Nouveau dossier/owl.carousel.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!--Custom JS-->
-        <script src="js/Nouveau dossier/custom.js"></script>
-        <script>
-            const  queryAll = (element) => document.querySelectorAll(element)
-            const query = (element) => document.querySelector(element)
+<script src="js/Nouveau dossier/jquery.js"></script>
+<!--modernizr.min.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-            const chevron = queryAll('.chevron')
-            const dropdown= queryAll('.dropdown1')
-            const flech = queryAll('.flech')
-            const closed = queryAll('.menu-close')
-			const menu = query('#site_menu_mobile')
-            console.log(chevron, dropdown, flech)
+<!--bootstrap.min.js-->
+<script src="js/Nouveau dossier/bootstrap.min.js"></script>
 
-            const read = () => {
-                chevron.forEach((el, key) => {
-                    el.onclick = () =>{
-                        
-                        console.log(el)
-                        if(el.dataset.extend === 'false'){
-                            const height = dropdown[key].scrollHeight
-                            dropdown[key].style.height = height+"px"
-                            flech[key].style.transform = 'rotateZ(180deg)'
-                            setTimeout(() => {
-                                el.dataset.extend = 'true'
-                            }, 500)
-                        }  
+<!-- bootsnav js -->
+<script src="js/Nouveau dossier/bootsnav.js"></script>
+<!--owl.carousel.js-->
+<script src="js/Nouveau dossier/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!--Custom JS-->
+<script src="js/Nouveau dossier/custom.js"></script>
+<script>
+    const  queryAll = (element) => document.querySelectorAll(element)
+    const query = (element) => document.querySelector(element)
 
-                        if(el.dataset.extend ==='true'){
-                            dropdown[key].style.height = 0+"px"
-                            flech[key].style.transform = 'rotateZ(0deg)'
-                            setTimeout(() => {
-                                el.dataset.extend = 'false'
-                            }, 500)
-                        }
-                    }
-                })
-                closed.forEach((el, key) => {
-					el.onclick = () => {
-					if(menu.dataset.extend === 'false'){
-						menu.style.transform = 'translateX(0%)'
-						setTimeout(() => {
-							menu.dataset.extend = 'true'
-						}, 500)
-					}
-					if(menu.dataset.extend === 'true'){
-						menu.style.transform = 'translateX(100%)'
-						setTimeout(() => {
-							menu.dataset.extend = 'false'
-						}, 500)
-					}
-				}
-				})
-            }
+    const chevron = queryAll('.chevron')
+    const dropdown= queryAll('.dropdown1')
+    const flech = queryAll('.flech')
+    const closed = queryAll('.menu-close')
+    const menu = query('#site_menu_mobile')
+    console.log(chevron, dropdown, flech)
 
-            requestAnimationFrame(read)
-            
-        
-            const load = () => {
-                const navbar = window.location.hash
-                const section1 = document.querySelector('#elevage')
-                const section2 = document.querySelector('#agriculture')
-                const section3 = document.querySelector('#transformation')
-                const section4 = document.querySelector('#analyse')
-                const btnElevage = document.querySelectorAll('.btnElevage')
-                const btnAgriculture = queryAll('.btnAgriculture')
-                const btnEngrais = queryAll('.btnEngrais')
-                const btnAnalyse = queryAll('.btnAnalyse')
-
-                const section = queryAll('section')
-                const hash = window.location.hash
-
-                btnElevage.forEach(element => {
-                element.onclick = () => {
-                        window.location.hash = '#elevage'
-                        location.reload()
-                    }
-                });
-
-                btnAgriculture.forEach(element => {
-                    element.onclick = () => {
-                        window.location.hash = '#agriculture'
-                        location.reload()
-                    }
-                });
-
-                btnEngrais.forEach(element => {
-                    element.onclick = () => {
-                        window.location.hash = '#engrais'
-                        location.reload()
-                    }
-                });
-
-                btnAnalyse.forEach(element => {
-                    element.onclick = () => {
-                        window.location.hash = '#analyse'
-                        location.reload()
-                    }
-                });
-
-                if(navbar.length === 0){
-                    window.location.hash = '#elevage'
-                    location.reload()
-                }
-                const h = hash.replace('#', '')
-                section.forEach(el => {
-                    if(h !== el.id) el.remove()
-                })
-                 
-            }
-            requestAnimationFrame(load)
-
-            const play_button = queryAll('.play_button')
-            play_button.forEach(element => {
-                element.onclick = () => {
-                    const id = element.dataset.target
-                    const video = query(id)
-                    console.dir(video)
-                    if(video.paused){
-                        console.log("paused : true")
-                        
-                        video.play()
-                    }  
-                    element.style.opacity = 0
+    const read = () => {
+        chevron.forEach((el, key) => {
+            el.onclick = () =>{
+                
+                console.log(el)
+                if(el.dataset.extend === 'false'){
+                    const height = dropdown[key].scrollHeight
+                    dropdown[key].style.height = height+"px"
+                    flech[key].style.transform = 'rotateZ(180deg)'
                     setTimeout(() => {
-                        element.style.visibility = 'hidden'
-                    }, 300)
-                    
-                    video.onpause = () => {
-                        element.style.visibility = 'visible'
-                        setTimeout(() => {
-                            element.style.opacity = 1
-                        }, 300)
-                    }
+                        el.dataset.extend = 'true'
+                    }, 500)
+                }  
+
+                if(el.dataset.extend ==='true'){
+                    dropdown[key].style.height = 0+"px"
+                    flech[key].style.transform = 'rotateZ(0deg)'
+                    setTimeout(() => {
+                        el.dataset.extend = 'false'
+                    }, 500)
                 }
-            })
-        </script>
+            }
+        })
+        closed.forEach((el, key) => {
+            el.onclick = () => {
+            if(menu.dataset.extend === 'false'){
+                menu.style.transform = 'translateX(0%)'
+                setTimeout(() => {
+                    menu.dataset.extend = 'true'
+                }, 500)
+            }
+            if(menu.dataset.extend === 'true'){
+                menu.style.transform = 'translateX(100%)'
+                setTimeout(() => {
+                    menu.dataset.extend = 'false'
+                }, 500)
+            }
+        }
+        })
+    }
+
+    requestAnimationFrame(read)
+    
+
+    const load = () => {
+        const navbar = window.location.hash
+        const section1 = document.querySelector('#elevage')
+        const section2 = document.querySelector('#agriculture')
+        const section3 = document.querySelector('#transformation')
+        const section4 = document.querySelector('#analyse')
+        const btnElevage = document.querySelectorAll('.btnElevage')
+        const btnAgriculture = queryAll('.btnAgriculture')
+        const btnEngrais = queryAll('.btnEngrais')
+        const btnAnalyse = queryAll('.btnAnalyse')
+
+        const section = queryAll('section')
+        const hash = window.location.hash
+
+        btnElevage.forEach(element => {
+        element.onclick = () => {
+                window.location.hash = '#elevage'
+                location.reload()
+            }
+        });
+
+        btnAgriculture.forEach(element => {
+            element.onclick = () => {
+                window.location.hash = '#agriculture'
+                location.reload()
+            }
+        });
+
+        btnEngrais.forEach(element => {
+            element.onclick = () => {
+                window.location.hash = '#engrais'
+                location.reload()
+            }
+        });
+
+        btnAnalyse.forEach(element => {
+            element.onclick = () => {
+                window.location.hash = '#analyse'
+                location.reload()
+            }
+        });
+
+        if(navbar.length === 0){
+            window.location.hash = '#elevage'
+            location.reload()
+        }
+        const h = hash.replace('#', '')
+        section.forEach(el => {
+            if(h !== el.id) el.remove()
+        })
+            
+    }
+    requestAnimationFrame(load)
+
+    const play_button = queryAll('.play_button')
+    play_button.forEach(element => {
+        element.onclick = () => {
+            const id = element.dataset.target
+            const video = query(id)
+            console.dir(video)
+            if(video.paused){
+                console.log("paused : true")
+                
+                video.play()
+            }  
+            element.style.opacity = 0
+            setTimeout(() => {
+                element.style.visibility = 'hidden'
+            }, 300)
+            
+            video.onpause = () => {
+                element.style.visibility = 'visible'
+                setTimeout(() => {
+                    element.style.opacity = 1
+                }, 300)
+            }
+        }
+    })
+</script>
+
 </body>
+
 
 </html>
